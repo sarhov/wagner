@@ -1,0 +1,18 @@
+/* line 1, ../sass/_variables.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/_variables.scss */
+.clearfix {
+  *zoom: 1;
+  background: none;
+}
+/* line 38, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
