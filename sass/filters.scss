@@ -1,5 +1,7 @@
 @import 'compass/';
 @import 'variables';
+@import "icon/*.png";
+@include all-icon-sprites;
 
 body{
   background:red;
