@@ -3,18 +3,174 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/filters.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <title>Wagner</title>
 </head>
 <body>
 
 
   <div class="wrapper">
-    
-  </div>
-  <!-- /.wrapper -->
+    <div class="filters">
+      <form action="" class="filters__form">
+        <div class="filters-switchers">
+          <div class="filters-switchers__item">
+            <input type="radio" id="switcher0" name="car-state" class="car-stated_null">
+            <input type="radio" name="car-state" id="switcher1">
+            <label for="switcher1">
+              <i class="icons-sprite icons-icon2"></i>
+              <span class="filters-switchers__text">  Новые
+              </span>         </label>
+            </div>
+            <!-- /.filters-switchers__item -->
+
+            <div class="filters-switchers__item">
+              <input type="radio" name="car-state" id="switcher2">
+              <label for="switcher2">
+              <i class="icons-sprite icons-icon3"></i>
+                <span class="filters-switchers__text">    С пробегом
+                </span>       
+                </label>
+              </div>
+              <!-- /.filters-switchers__item -->
+
+              <div class="filters-switchers__item filters-switchers__item_advanced">
+                <input type="radio" name="car-state" id="switcher3">
+                <label for="switcher3">
+                <i class="icons-sprite icons-icon3"></i>        
+                 <span class="filters-switchers__text">Комерческое</span>
+               </label>
+             </div>
+             <!-- /.filters-switchers__item -->
+
+           </div>
+           <!-- /.filters-switchers -->
+           <div class="filters-options filters-options_main">
+             <div class="filters-options__switcher">
+                <span>Кузов</span>
+               <div class="filters-options__values filters-options__values_car-type">
+
+                 <div class="filters-options__item filters-options__item_iconed">
+                    <input type="checkbox" name="" id="car-type1">
+                    <label for="car-type1" class="filters-options__label">
+                     <i class="icons-sprites icons-icon17"></i>
+                     <span class="filters-options__text">Седан</span>
+                    </label>
+                 </div>
+                 <!-- /.filter-options__item filter-options__item_iconed -->
+
+                 <div class="filters-options__item filters-options__item_iconed">
+                   <input type="checkbox" name="" id="car-type2">
+                   <label for="car-type2" class="filters-options__label">
+                     <i class="icons-sprites icons-icon16"></i>
+                     <span class="filters-options__text">Хэтчбэк</span>
+                   </label>
+                 </div>
+                 <!-- /.filter-options__item filter-options__item_iconed -->
+
+                 <div class="filters-options__item filters-options__item_iconed">
+                   <input type="checkbox" name="" id="car-type3">
+                   <label for="car-type3" class="filters-options__label">
+                     <i class="icons-sprites icons-icon25"></i>
+                     <span class="filters-options__text">Универсал</span>
+                    </label>
+                 </div>
+                 <!-- /.filter-options__item filter-options__item_iconed -->
+
+                 <div class="filters-options__item filters-options__item_iconed">
+                   <input type="checkbox" name="" id="car-type4">
+                   <label for="car-type4" class="filters-options__label">
+                     <i class="icons-sprites icons-icon18"></i>
+                     <span class="filters-options__text">Внедорожник</span>
+                   </label>
+                 </div>
+                 <!-- /.filter-options__item filter-options__item_iconed -->
+
+                 <div class="filters-options__item filters-options__item_iconed">
+                   <input type="checkbox" name="" id="car-type5">
+                   <label for="car-type5" class="filters-options__label">
+                     <i class="icons-sprites icons-icon14"></i>
+                     <span class="filters-options__text">Кроссовер</span>
+                   </label>
+                 </div>
+                 <!-- /.filter-options__item filter-options__item_iconed -->
+                 
+                 <div class="filters-options__item filters-options__item_iconed">
+                   <input type="checkbox" name="" id="car-type6">
+                   <label for="car-type6" class="filters-options__label">
+                     <i class="icons-sprites icons-icon19"></i>
+                     <span class="filters-options__text">Пикап</span>
+                   </label>
+                 </div>
+                 <!-- /.filter-options__item filter-options__item_iconed -->
+                 
+                 <div class="filters-options__item filters-options__item_iconed">
+                   <input type="checkbox" name="" id="car-type7">
+                   <label for="car-type7" class="filters-options__label">
+                     <i class="icons-sprites icons-icon15"></i>
+                     <span class="filters-options__text">Кабриолет</span>
+                   </label>
+                 </div>
+                 <!-- /.filter-options__item filter-options__item_iconed -->
+                 
+                 <div class="filters-options__item filters-options__item_iconed">
+                   <input type="checkbox" name="" id="car-type8">
+                   <label for="car-type8" class="filters-options__label">
+                     <i class="icons-sprites icons-icon12"></i>
+                     <span class="filters-options__text">Фургон</span>
+                   </label>
+                 </div>
+                 <!-- /.filter-options__item filter-options__item_iconed -->
+                 
+                 <div class="filters-options__item filters-options__item_iconed">
+                   <input type="checkbox" name="" id="car-type9">
+                   <label for="car-type9" class="filters-options__label">
+                     <i class="icons-sprites icons-icon13"></i>
+                     <span class="filters-options__text">Микроавтобус</span>
+                   </label>
+                 </div>
+                 <!-- /.filter-options__item filter-options__item_iconed -->                 
+
+                 <div class="filters-options__item filters-options__item_iconed">
+                   <input type="checkbox" name="" id="car-type10">
+                   <label for="car-type10" class="filters-options__label">
+                     <i class="icons-sprites icons-icon23"></i>
+                     <span class="filters-options__text">Минивен</span>
+                   </label>
+                 </div>
+                 <!-- /.filter-options__item filter-options__item_iconed -->
+
+               </div>
+               <!-- /.filter-options__values -->
+               </div>
+             <!-- /.filter-options__item -->
+
+             <div class="filters-options__switcher">
+                <span>Марка</span>
+               <div class="filters-options__values filters-options__values_car-brand">
+                 
+               </div>
+               <!-- /.filters-options__values -->
+               </div>
+             <!-- /.filters-options__item -->
+             <div class="filters-options__switcher">
+                <span>Модель</span>
+               <div class="filters-options__values filters-options__values_car-variant">
+                 
+               </div>
+               <!-- /.filters-options__values -->
+              </div>
+             <!-- /.filters-options__item -->
+           </div>
+           <!-- /.filters-option filters-options_main -->
+         </form>
+         <!-- /.filters__form -->
+       </div>
+       <!-- /.filters -->
+     </div>
+     <!-- /.wrapper -->
 
 
-  <script src="js/jquery-1.8.3.min.js"></script>
-  <script src="js/functions.js"></script>
-</body>
-</html>
+     <script src="js/jquery-1.8.3.min.js"></script>
+     <script src="js/functions.js"></script>
+   </body>
+   </html>
