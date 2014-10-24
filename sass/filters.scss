@@ -136,7 +136,7 @@ body {
         border-left: 1px solid $base-border-color;
         border-right: 1px solid $base-border-color;
         margin-left: -1px;
-        z-index: 2;
+        z-index: 3;
         display: none;
         padding: 10px 15px  12px 5px;
         @at-root         .filters-options__switcher:hover & {
@@ -228,4 +228,79 @@ body {
         // _checkbox
         }
     }
+}
+
+.filter-box{
+    float: left;
+    margin-left: 20px;
+    padding-top: 15px;
+    &__header{
+        font-weight: bold;
+        color: #999999;
+        margin-bottom: 10px;
+    }
+    &_price{
+        width: 250px;
+    }
+}
+
+.handler-price{
+    // display: none;
+    position: absolute;
+    top: 20px;
+    background:#ddd;
+    border-radius: 4px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    font-size: 11px;
+    border: 1px solid $base-border-color;
+    text-align: center;
+    background:#f7f7f7;
+    font-weight: bold;
+    color: #777777;
+    border-bottom-width: 3px;
+    padding: 3px 0;
+    box-shadow: 0 1px 3px   -6px #ddd;
+    @include double-tringle(top, 7px, $base-border-color, 1px, #f7f7f7);
+}
+
+.price-range{
+    margin-bottom: 15px;
+    @include pie-clearfix;
+    &-input{
+    border: 2px solid $base-border-color;
+    padding: 3px;
+    height: 40px;
+    margin-left: 10px;
+    padding: 4px 7px;
+    border-radius: 5px;
+    float: left;
+    width: 120px;
+
+    &:first-child{
+        margin-left: 0;  
+    }
+    }
+}
+
+.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+  background: none repeat scroll 0 0 #ececec;
+  border: medium none;
+  border-radius: 0;
+  height: 2px;
+}
+
+.ui-state-default.ui-state-default, .ui-widget-content.ui-widget-content .ui-state-default.ui-state-default, .ui-widget-header.ui-widget-header .ui-state-default {
+  background: none repeat scroll 0 0 #fe4d4d;
+  border: medium none;
+  box-shadow: none;
+  height: 8px; 
+  top: -3px;
+  width: 8px;
+  margin-left: -5px;
+}
+
+.ui-slider .ui-slider-range{
+    background:#c5c5c5;
 }

@@ -10,14 +10,105 @@
 // 
 // @TODO: Add docs to unselect!
 //
-@mixin unselect() {
-     -webkit-touch-callout: none;
-   -webkit-user-select: none;
-   -khtml-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
+@mixin unselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 $base-border-color: #ececec;
 $base-button-color: #333;
+
+// 
+// @TODO: Add docs to tringle!
+//
+
+@mixin tringle($position, $size, $color) {
+    &:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: $size;
+        @if $position == left {
+            right: 100%;
+            border-color: transparent $color transparent transparent;
+            top: 50%;
+            margin-top: -$size;
+        }
+        @else if $position == right {
+            left: 100%;
+            border-color: transparent transparent transparent $color;
+            top: 50%;
+            margin-top: -$size;
+        }
+        @else if $position == top {
+            left: 50%;
+            border-color: transparent transparent $color transparent;
+            bottom: 100%;
+            margin-left: -$size;
+        }
+        @else if $position == bottom {
+            left: 50%;
+            border-color: $color transparent transparent transparent;
+            top: 100%;
+            margin-left: -$size;
+        }
+    } 
+}
+
+@mixin double-tringle($position, $size, $color, $gab, $seccolor) {
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: $size;
+        z-index: 2;
+        @if $position == left {
+            right: 100%;
+            border-color: transparent $color transparent transparent;
+            top: 50%;
+            margin-top: -$size;
+        }
+        @else if $position == right {
+            left: 100%;
+            border-color: transparent transparent transparent $color;
+            top: 50%;
+            margin-top: -$size;
+        }
+        @else if $position == top {
+            left: 50%;
+            border-color: transparent transparent $color transparent;
+            bottom: 100%;
+            margin-left: -$size;
+        }
+        @else if $position == bottom {
+            left: 50%;
+            border-color: $color transparent transparent transparent;
+            top: 100%;
+            margin-left: -$size;
+        }
+    }
+    &:after {
+        z-index: 3;
+      
+        @if $position == left {
+          border-color: transparent $seccolor transparent transparent;
+           margin-left: -$gab;
+        }
+        @else if $position == right {
+           margin-right: $gab;
+           border-color: transparent transparent transparent $seccolor;
+        }
+        @else if $position == top {
+          margin-bottom: -$gab;
+            border-color: transparent transparent $seccolor transparent;
+        }
+        @else if $position == bottom {
+            margin-top: -$gab;
+            border-color: $seccolor transparent transparent transparent;
+        }
+    }
+}
