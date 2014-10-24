@@ -263,6 +263,9 @@ body {
     padding: 3px 0;
     box-shadow: 0 1px 3px   -6px #ddd;
     @include double-tringle(top, 7px, $base-border-color, 1px, #f7f7f7);
+    &:empty{
+        display: none;  
+    }
 }
 
 .price-range{

@@ -256,8 +256,16 @@
             $('#characteristics').submit();
           }
         });
-        $('.ui-slider-handle:last-child').append('<span class="handler-price" id="handPriceMax"></span>');
-        $('.ui-slider-handle:nth-child(2)').append('<span class="handler-price" id="handPriceMin"></span>');
+        var handleprice = $('.handler-price');
+        if (handleprice.length > 0) {
+            console.log('found')
+        }
+        else{
+           $('.ui-slider-handle:last-child').append('<span class="handler-price" id="handPriceMax"></span>');
+            $('.ui-slider-handle:nth-child(2)').append('<span class="handler-price" id="handPriceMin"></span>');
+            console.log('not-found')
+         }
+      
 
         $('#handPriceMin').text($( "#slider-range" ).slider( "values", 0 ));
         $('#handPriceMax').text($( "#slider-range" ).slider( "values", 1 ));  
@@ -266,7 +274,8 @@
 
       }
 
-       pricerange(685, 2799)
+       pricerange(685, 2799);
+     
       $('.price-range-input').keyup(function() {
            // alert('yes')
            var min = $('#min-price').val()

@@ -550,8 +550,12 @@ body {
   margin-bottom: -1px;
   border-color: transparent transparent #f7f7f7 transparent;
 }
+/* line 266, ../sass/filters.scss */
+.handler-price:empty {
+  display: none;
+}
 
-/* line 268, ../sass/filters.scss */
+/* line 271, ../sass/filters.scss */
 .price-range {
   margin-bottom: 15px;
   *zoom: 1;
@@ -562,7 +566,7 @@ body {
   display: table;
   clear: both;
 }
-/* line 271, ../sass/filters.scss */
+/* line 274, ../sass/filters.scss */
 .price-range-input {
   border: 2px solid #ececec;
   padding: 3px;
@@ -573,12 +577,12 @@ body {
   float: left;
   width: 120px;
 }
-/* line 281, ../sass/filters.scss */
+/* line 284, ../sass/filters.scss */
 .price-range-input:first-child {
   margin-left: 0;
 }
 
-/* line 287, ../sass/filters.scss */
+/* line 290, ../sass/filters.scss */
 .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
   background: none repeat scroll 0 0 #ececec;
   border: medium none;
@@ -586,7 +590,7 @@ body {
   height: 2px;
 }
 
-/* line 294, ../sass/filters.scss */
+/* line 297, ../sass/filters.scss */
 .ui-state-default.ui-state-default, .ui-widget-content.ui-widget-content .ui-state-default.ui-state-default, .ui-widget-header.ui-widget-header .ui-state-default {
   background: none repeat scroll 0 0 #fe4d4d;
   border: medium none;
@@ -597,7 +601,7 @@ body {
   margin-left: -5px;
 }
 
-/* line 304, ../sass/filters.scss */
+/* line 307, ../sass/filters.scss */
 .ui-slider .ui-slider-range {
   background: #c5c5c5;
 }
