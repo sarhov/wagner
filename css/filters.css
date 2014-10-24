@@ -233,17 +233,25 @@ body {
 }
 
 /* line 17, ../sass/filters.scss */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* line 24, ../sass/filters.scss */
 .icons-sprite, .icons-icon1, .icons-icon10, .icons-icon11, .icons-icon12, .icons-icon13, .icons-icon14, .icons-icon15, .icons-icon16, .icons-icon17, .icons-icon18, .icons-icon19, .icons-icon2, .icons-icon20, .icons-icon21, .icons-icon22, .icons-icon23, .icons-icon24, .icons-icon25, .icons-icon26, .icons-icon27, .icons-icon28, .icons-icon29, .icons-icon3, .icons-icon4, .icons-icon5, .icons-icon6, .icons-icon7, .icons-icon8, .icons-icon9 {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 22, ../sass/filters.scss */
+/* line 29, ../sass/filters.scss */
 .wrapper {
   padding: 200px 0;
 }
 
-/* line 26, ../sass/filters.scss */
+/* line 33, ../sass/filters.scss */
 .filters {
   max-width: 1110px;
   width: 100%;
@@ -253,7 +261,7 @@ body {
   border-bottom: 1px solid #ececec;
   height: auto;
 }
-/* line 36, ../sass/filters.scss */
+/* line 43, ../sass/filters.scss */
 .filters__form {
   height: 100%;
   *zoom: 1;
@@ -265,24 +273,24 @@ body {
   clear: both;
 }
 
-/* line 42, ../sass/filters.scss */
+/* line 49, ../sass/filters.scss */
 .filters-switchers {
   float: left;
   padding-top: 15px;
 }
-/* line 45, ../sass/filters.scss */
+/* line 52, ../sass/filters.scss */
 .filters-switchers__item {
   margin-bottom: 10px;
 }
-/* line 46, ../sass/filters.scss */
+/* line 53, ../sass/filters.scss */
 .filters-switchers__item_advanced {
   display: none;
 }
-/* line 50, ../sass/filters.scss */
+/* line 57, ../sass/filters.scss */
 .filters-switchers__item input[type="radio"] {
   display: none;
 }
-/* line 53, ../sass/filters.scss */
+/* line 60, ../sass/filters.scss */
 .filters-switchers__item label {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -302,23 +310,23 @@ body {
   vertical-align: middle;
   padding-left: 7px;
 }
-/* line 68, ../sass/filters.scss */
+/* line 75, ../sass/filters.scss */
 .filters-switchers__item label:hover {
   background-color: #fafafa;
   color: #555555;
 }
-/* line 73, ../sass/filters.scss */
+/* line 80, ../sass/filters.scss */
 .filters-switchers__item input[type="radio"]:checked + label {
   font-weight: bold;
   color: #555555;
   background: #e9e9e9;
 }
-/* line 79, ../sass/filters.scss */
+/* line 86, ../sass/filters.scss */
 .filters-switchers__text {
   margin-left: 5px;
 }
 
-/* line 84, ../sass/filters.scss */
+/* line 91, ../sass/filters.scss */
 .filters-options {
   position: relative;
   float: left;
@@ -327,7 +335,7 @@ body {
   padding-top: 15px;
   *zoom: 1;
 }
-/* line 85, ../sass/filters.scss */
+/* line 92, ../sass/filters.scss */
 .filters-options input[type="checkbox"] {
   display: none;
 }
@@ -337,7 +345,7 @@ body {
   display: table;
   clear: both;
 }
-/* line 94, ../sass/filters.scss */
+/* line 101, ../sass/filters.scss */
 .filters-options__switcher {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -351,20 +359,20 @@ body {
   text-align: center;
   width: 100px;
 }
-/* line 102, ../sass/filters.scss */
+/* line 109, ../sass/filters.scss */
 .filters-options__switcher + .filters-options__switcher {
   border-top: none;
 }
-/* line 105, ../sass/filters.scss */
+/* line 112, ../sass/filters.scss */
 .filters-options__switcher:hover {
   background: #fcfcfc;
   border-right-color: #fcfcfc;
 }
-/* line 108, ../sass/filters.scss */
+/* line 115, ../sass/filters.scss */
 .filters-options__switcher:hover > span {
   font-weight: bold;
 }
-/* line 112, ../sass/filters.scss */
+/* line 119, ../sass/filters.scss */
 .filters-options__switcher:after {
   content: '';
   float: right;
@@ -376,11 +384,11 @@ body {
   z-index: 3;
   visibility: hidden;
 }
-/* line 124, ../sass/filters.scss */
+/* line 131, ../sass/filters.scss */
 .filters-options__switcher:hover:after {
   visibility: visible;
 }
-/* line 129, ../sass/filters.scss */
+/* line 136, ../sass/filters.scss */
 .filters-options__values {
   position: absolute;
   left: 100%;
@@ -395,62 +403,62 @@ body {
   display: none;
   padding: 10px 15px  12px 5px;
 }
-/* line 143, ../sass/filters.scss */
+/* line 150, ../sass/filters.scss */
 .filters-options__switcher:hover .filters-options__values {
   display: block;
 }
-/* line 146, ../sass/filters.scss */
+/* line 153, ../sass/filters.scss */
 .filters-options__values_car-type {
   width: 630px;
 }
-/* line 149, ../sass/filters.scss */
+/* line 156, ../sass/filters.scss */
 .filters-options__values_car-brand {
   width: 430px;
 }
-/* line 154, ../sass/filters.scss */
+/* line 161, ../sass/filters.scss */
 .filters-options__values_car-variant {
   width: 430px;
 }
-/* line 158, ../sass/filters.scss */
+/* line 165, ../sass/filters.scss */
 .filters-options__item {
   float: left;
   text-align: left;
   margin-left: 7px;
   margin-bottom: 0px;
 }
-/* line 163, ../sass/filters.scss */
+/* line 170, ../sass/filters.scss */
 .filters-options__item input:checked + .filters-options__label_iconed:before {
   background-color: #e9e9e9;
   border-color: #d7d7d7;
 }
-/* line 167, ../sass/filters.scss */
+/* line 174, ../sass/filters.scss */
 .filters-options__item input:checked + label {
   color: #555;
   font-weight: bold;
 }
-/* line 171, ../sass/filters.scss */
+/* line 178, ../sass/filters.scss */
 .filters-options__item_option-line {
   float: none;
   margin-bottom: 1px;
   margin-left: 0;
 }
-/* line 176, ../sass/filters.scss */
+/* line 183, ../sass/filters.scss */
 .filters-options__item_option-line input[type="checkbox"] {
   display: none;
 }
-/* line 179, ../sass/filters.scss */
+/* line 186, ../sass/filters.scss */
 .filters-options__item_option-line label {
   width: 167px;
 }
-/* line 182, ../sass/filters.scss */
+/* line 189, ../sass/filters.scss */
 .filters-options__item_option-line label:before {
   display: none;
 }
-/* line 185, ../sass/filters.scss */
+/* line 192, ../sass/filters.scss */
 .filters-options__item_option-line i {
   position: static !important;
 }
-/* line 188, ../sass/filters.scss */
+/* line 195, ../sass/filters.scss */
 .filters-options__item_option-line figure {
   display: inline-block;
   vertical-align: middle;
@@ -461,12 +469,12 @@ body {
   margin: 0;
   border-radius: 4px;
 }
-/* line 198, ../sass/filters.scss */
+/* line 205, ../sass/filters.scss */
 .filters-options__item_option-line input:checked + .filters-options__label_iconed figure {
   background-color: #e9e9e9;
   border-color: #d7d7d7;
 }
-/* line 204, ../sass/filters.scss */
+/* line 211, ../sass/filters.scss */
 .filters-options__label {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -485,20 +493,20 @@ body {
   position: relative;
   padding: 3px 0 4px 4px;
 }
-/* line 217, ../sass/filters.scss */
+/* line 224, ../sass/filters.scss */
 .filters-options__label span {
   margin-left: 5px;
   vertical-align: middle;
   text-shadow: 1px 0 1px #F5F5F5;
 }
-/* line 222, ../sass/filters.scss */
+/* line 229, ../sass/filters.scss */
 .filters-options__label_iconed {
   max-height: 47px;
   border: 1px solid transparent;
   line-height: 35px;
   width: 145px;
 }
-/* line 227, ../sass/filters.scss */
+/* line 234, ../sass/filters.scss */
 .filters-options__label_iconed::before {
   width: 39px;
   content: '';
@@ -509,21 +517,21 @@ body {
   border-radius: 4px;
   border: 1px solid #ececec;
 }
-/* line 238, ../sass/filters.scss */
+/* line 245, ../sass/filters.scss */
 .filters-options__label_iconed:hover {
   border-color: #f1f1f1;
 }
-/* line 241, ../sass/filters.scss */
+/* line 248, ../sass/filters.scss */
 .filters-options__label_iconed i {
   position: absolute;
   top: 18px;
   left: 12px;
 }
-/* line 247, ../sass/filters.scss */
+/* line 254, ../sass/filters.scss */
 .filters-options__label_checkbox {
   width: 125px;
 }
-/* line 249, ../sass/filters.scss */
+/* line 256, ../sass/filters.scss */
 .filters-options__label_checkbox::before {
   content: '';
   display: inline-block;
@@ -537,43 +545,43 @@ body {
   transition: 0.3s;
   border-radius: 2px;
 }
-/* line 259, ../sass/filters.scss */
+/* line 266, ../sass/filters.scss */
 .filters-options__item_car-brand input:checked + .filters-options__label_checkbox::before {
   box-shadow: inset 0  0  0px 4px  #444;
 }
-/* line 262, ../sass/filters.scss */
+/* line 269, ../sass/filters.scss */
 .filters-options__label_checkbox:hover {
   opacity: 0.85;
 }
 
-/* line 271, ../sass/filters.scss */
+/* line 278, ../sass/filters.scss */
 .filter-box {
   float: left;
   margin-left: 30px;
   padding-top: 15px;
 }
-/* line 275, ../sass/filters.scss */
+/* line 282, ../sass/filters.scss */
 .filter-box__header {
   font-weight: bold;
   color: #999999;
   margin-bottom: 10px;
 }
-/* line 280, ../sass/filters.scss */
+/* line 287, ../sass/filters.scss */
 .filter-box_price {
   width: 250px;
 }
-/* line 283, ../sass/filters.scss */
+/* line 290, ../sass/filters.scss */
 .filter-box__content_option-line {
   margin-top: -5px;
 }
-/* line 286, ../sass/filters.scss */
+/* line 293, ../sass/filters.scss */
 .filter-box_actions {
   float: right;
   width: 120px;
   text-align: center;
 }
 
-/* line 293, ../sass/filters.scss */
+/* line 300, ../sass/filters.scss */
 .handler-price {
   position: absolute;
   top: 20px;
@@ -610,12 +618,12 @@ body {
   margin-bottom: -1px;
   border-color: transparent transparent #f7f7f7 transparent;
 }
-/* line 312, ../sass/filters.scss */
+/* line 319, ../sass/filters.scss */
 .handler-price:empty {
   display: none;
 }
 
-/* line 317, ../sass/filters.scss */
+/* line 324, ../sass/filters.scss */
 .price-range {
   margin-bottom: 15px;
   *zoom: 1;
@@ -626,7 +634,7 @@ body {
   display: table;
   clear: both;
 }
-/* line 320, ../sass/filters.scss */
+/* line 327, ../sass/filters.scss */
 .price-range-input {
   border: 2px solid #ececec;
   padding: 3px;
@@ -637,12 +645,12 @@ body {
   float: left;
   width: 120px;
 }
-/* line 329, ../sass/filters.scss */
+/* line 336, ../sass/filters.scss */
 .price-range-input:first-child {
   margin-left: 0;
 }
 
-/* line 335, ../sass/filters.scss */
+/* line 342, ../sass/filters.scss */
 .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
   background: none repeat scroll 0 0 #ececec;
   border: medium none;
@@ -650,7 +658,7 @@ body {
   height: 2px;
 }
 
-/* line 342, ../sass/filters.scss */
+/* line 349, ../sass/filters.scss */
 .ui-state-default.ui-state-default, .ui-widget-content.ui-widget-content .ui-state-default.ui-state-default, .ui-widget-header.ui-widget-header .ui-state-default {
   background: none repeat scroll 0 0 #fe4d4d;
   border: medium none;
@@ -661,17 +669,17 @@ body {
   margin-left: -5px;
 }
 
-/* line 352, ../sass/filters.scss */
+/* line 359, ../sass/filters.scss */
 .ui-slider .ui-slider-range {
   background: #c5c5c5;
 }
 
-/* line 356, ../sass/filters.scss */
+/* line 363, ../sass/filters.scss */
 .filter-reset, .advanced-filter-call, .form-submit {
   margin-bottom: 10px;
 }
 
-/* line 360, ../sass/filters.scss */
+/* line 367, ../sass/filters.scss */
 .advanced-filter-call {
   display: block;
   width: 120px;
@@ -687,19 +695,19 @@ body {
   font-size: 14px;
   padding: 6px 0;
 }
-/* line 374, ../sass/filters.scss */
+/* line 381, ../sass/filters.scss */
 .advanced-filter-call:hover {
   background: #f3f3f3;
   color: #777777;
 }
-/* line 378, ../sass/filters.scss */
+/* line 385, ../sass/filters.scss */
 .advanced-filter-call.is-active {
   border-color: #c9c9c9;
   color: #777;
   background: #fff;
 }
 
-/* line 386, ../sass/filters.scss */
+/* line 393, ../sass/filters.scss */
 .filter-reset {
   background: none;
   border: none;
@@ -709,12 +717,12 @@ body {
   text-shadow: 1px 0 1px #F5F5F5;
   font-size: 14px;
 }
-/* line 394, ../sass/filters.scss */
+/* line 401, ../sass/filters.scss */
 .filter-reset:hover {
   text-decoration: none;
 }
 
-/* line 399, ../sass/filters.scss */
+/* line 406, ../sass/filters.scss */
 .form-submit {
   padding: 6px 0;
   color: #fff;
@@ -728,13 +736,13 @@ body {
   width: 120px;
   cursor: pointer;
 }
-/* line 411, ../sass/filters.scss */
+/* line 418, ../sass/filters.scss */
 .form-submit:hover {
   background: #ed6b6b;
   border-color: #ed6b6b;
   border-bottom-color: #df6667;
 }
-/* line 416, ../sass/filters.scss */
+/* line 423, ../sass/filters.scss */
 .form-submit.is-active {
   border-color: #ed6b6b;
   color: #ed6b6b;
