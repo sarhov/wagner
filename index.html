@@ -239,56 +239,83 @@
    </div>
    <!-- ./price-filter -->
    <script>
-      function pricerange(minprice, maxprice) {                  
-        $( "#slider-range" ).slider({
-          range: true,
-          min: 0,
-          max: 5000,
-          values: [ minprice, maxprice],
-          slide: function( event, ui ) {
-            $('#handPriceMin').text(ui.values[ 0 ]);
-            $('#handPriceMax').text( ui.values[ 1 ]);  
-            $('#min-price').val(ui.values[ 0 ]);
-            $('#max-price').val(ui.values[ 1 ]);       
+    function pricerange(minprice, maxprice) {                  
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 5000,
+        values: [ minprice, maxprice],
+        slide: function( event, ui ) {
+          $('#handPriceMin').text(ui.values[ 0 ]);
+          $('#handPriceMax').text( ui.values[ 1 ]);  
+          $('#min-price').val(ui.values[ 0 ]);
+          $('#max-price').val(ui.values[ 1 ]);       
 
-          },
-          stop: function( event, ui ) {
-            $('#characteristics').submit();
-          }
-        });
-        var handleprice = $('.handler-price');
-        if (handleprice.length > 0) {
-            console.log('found')
+        },
+        stop: function( event, ui ) {
+          $('#characteristics').submit();
         }
-        else{
-           $('.ui-slider-handle:last-child').append('<span class="handler-price" id="handPriceMax"></span>');
-            $('.ui-slider-handle:nth-child(2)').append('<span class="handler-price" id="handPriceMin"></span>');
-            console.log('not-found')
-         }
-      
-
-        $('#handPriceMin').text($( "#slider-range" ).slider( "values", 0 ));
-        $('#handPriceMax').text($( "#slider-range" ).slider( "values", 1 ));  
-        $('#min-price').val($( "#slider-range" ).slider( "values", 0 ));
-        $('#max-price').val($( "#slider-range" ).slider( "values", 1 ));          
-
+      });
+      var handleprice = $('.handler-price');
+      if (handleprice.length > 0) {
+        console.log('found')
       }
+      else{
+       $('.ui-slider-handle:last-child').append('<span class="handler-price" id="handPriceMax"></span>');
+       $('.ui-slider-handle:nth-child(2)').append('<span class="handler-price" id="handPriceMin"></span>');
+       console.log('not-found')
+     }
 
-       pricerange(685, 2799);
-     
-      $('.price-range-input').keyup(function() {
+
+     $('#handPriceMin').text($( "#slider-range" ).slider( "values", 0 ));
+     $('#handPriceMax').text($( "#slider-range" ).slider( "values", 1 ));  
+     $('#min-price').val($( "#slider-range" ).slider( "values", 0 ));
+     $('#max-price').val($( "#slider-range" ).slider( "values", 1 ));          
+
+   }
+
+   pricerange(685, 2799);
+
+   $('.price-range-input').keyup(function() {
            // alert('yes')
            var min = $('#min-price').val()
            var max = $('#max-price').val()
            pricerange(min, max)
-      });
-      
-</script>
+         });
+
+ </script>
 </div>
 <!-- /.filcter-box__content filcter-box__content_price -->
 </div>
 <!-- /.filter-box filter-box_price -->
 
+<div class="filter-box filter-box_option-line filter-box_with-header">
+  <div class="filter-box__header filter-box__header_option-line">
+    Коробка передач
+  </div>
+  <!-- /.filter-box__header filter-box__header_option-line -->
+  <div class="filter-box__content filter-box__content_option-line">
+   <div class="filters-options__item filters-options__item_option-line">
+     <input type="checkbox" name="" id="option-line01">
+     <label for="option-line01" class="filters-options__label filters-options__label_iconed">
+      <figure>
+        <i class="icons-sprites icons-icon4"></i>
+      </figure>       <span class="filters-options__text">Механическая</span>
+    </label>
+  </div>
+  <!-- /.filter-options__item_option-line -->
+  <div class="filters-options__item filters-options__item_option-line">
+   <input type="checkbox" name="" id="option-line02">
+   <label for="option-line02" class="filters-options__label filters-options__label_iconed">
+     <figure><i class="icons-sprites icons-icon5"></i></figure>
+     <span class="filters-options__text">Автоматическая</span>
+   </label>
+ </div>
+ <!-- /.filter-options__item_option-line -->
+</div>
+<!-- /.filter-box__content filter-box__content_option-line -->
+</div>
+<!-- /.filter-box filter-box_option-line filter-box_with-header -->
 
 
 </form>

@@ -142,17 +142,16 @@ body {
         @at-root         .filters-options__switcher:hover & {
             display: block;
         }
-
         &_car-type {
             width: 630px;
         }
         &_car-brand {
             width: 430px;
             // display: block;
+       
         }
         &_car-variant {
             width: 430px;
-
         }
     }
     &__item {
@@ -163,6 +162,38 @@ body {
         input:checked + .filters-options__label_iconed:before {
             background-color: #e9e9e9;
             border-color: #d7d7d7;
+        }
+        &_option-line {
+            float: none;
+            margin-bottom: 1px;
+            margin-left: 0;
+            // margin-top: -2px;
+            input[type="checkbox"]{
+                display: none;
+            }
+            label{
+                width: 160px;
+            }
+            label:before {
+                display: none;
+            }
+            i {
+                position: static !important;
+            }
+            figure {
+                display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+                width: 39px;
+                height: 37px;
+                border: 1px solid $base-border-color;
+                margin: 0;
+                border-radius: 4px;
+            }
+            input:checked + .filters-options__label_iconed figure {
+                background-color: #e9e9e9;
+                border-color: #d7d7d7;
+            }
         }
     }
     &__label {
@@ -209,46 +240,50 @@ body {
         }
         &_checkbox {
             width: 125px;
-            &::before{
-              content: '';
-              display: inline-block;
-              width: 16px;
-              height: 16px;
-              background: #e1e1e1;
-              vertical-align: middle;
-              @include transition(0.3s);
-              border-radius: 2px;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background: #e1e1e1;
+                vertical-align: middle;
+                @include transition(0.3s);
+                border-radius: 2px;
             }
-            @at-root .filters-options__item_car-brand input:checked + &::before{
-              box-shadow:  inset 0  0  0px 4px  #444;
+            @at-root             .filters-options__item_car-brand input:checked + &::before {
+                box-shadow: inset 0  0  0px 4px  #444;
             }
-            &:hover{
-              opacity: 0.85;
+            &:hover {
+                opacity: 0.85;
             }
-        // _checkbox
+            // _checkbox
+       
         }
     }
 }
 
-.filter-box{
+.filter-box {
     float: left;
     margin-left: 20px;
     padding-top: 15px;
-    &__header{
+    &__header {
         font-weight: bold;
         color: #999999;
         margin-bottom: 10px;
     }
-    &_price{
+    &_price {
         width: 250px;
+    }
+    &__content_option-line{
+        margin-top: -5px;
     }
 }
 
-.handler-price{
+.handler-price {
     // display: none;
     position: absolute;
     top: 20px;
-    background:#ddd;
+    background: #ddd;
     border-radius: 4px;
     left: 50%;
     margin-left: -30px;
@@ -256,54 +291,53 @@ body {
     font-size: 11px;
     border: 1px solid $base-border-color;
     text-align: center;
-    background:#f7f7f7;
+    background: #f7f7f7;
     font-weight: bold;
     color: #777777;
     border-bottom-width: 3px;
     padding: 3px 0;
     box-shadow: 0 1px 3px   -6px #ddd;
     @include double-tringle(top, 7px, $base-border-color, 1px, #f7f7f7);
-    &:empty{
-        display: none;  
+    &:empty {
+        display: none;
     }
 }
 
-.price-range{
+.price-range {
     margin-bottom: 15px;
     @include pie-clearfix;
-    &-input{
-    border: 2px solid $base-border-color;
-    padding: 3px;
-    height: 40px;
-    margin-left: 10px;
-    padding: 4px 7px;
-    border-radius: 5px;
-    float: left;
-    width: 120px;
-
-    &:first-child{
-        margin-left: 0;  
-    }
+    &-input {
+        border: 2px solid $base-border-color;
+        padding: 3px;
+        height: 40px;
+        margin-left: 10px;
+        padding: 4px 7px;
+        border-radius: 5px;
+        float: left;
+        width: 120px;
+        &:first-child {
+            margin-left: 0;
+        }
     }
 }
 
 .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
-  background: none repeat scroll 0 0 #ececec;
-  border: medium none;
-  border-radius: 0;
-  height: 2px;
+    background: none repeat scroll 0 0 #ececec;
+    border: medium none;
+    border-radius: 0;
+    height: 2px;
 }
 
 .ui-state-default.ui-state-default, .ui-widget-content.ui-widget-content .ui-state-default.ui-state-default, .ui-widget-header.ui-widget-header .ui-state-default {
-  background: none repeat scroll 0 0 #fe4d4d;
-  border: medium none;
-  box-shadow: none;
-  height: 8px; 
-  top: -3px;
-  width: 8px;
-  margin-left: -5px;
+    background: none repeat scroll 0 0 #fe4d4d;
+    border: medium none;
+    box-shadow: none;
+    height: 8px;
+    top: -3px;
+    width: 8px;
+    margin-left: -5px;
 }
 
-.ui-slider .ui-slider-range{
-    background:#c5c5c5;
+.ui-slider .ui-slider-range {
+    background: #c5c5c5;
 }
