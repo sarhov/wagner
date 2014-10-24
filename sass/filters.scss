@@ -172,7 +172,7 @@ body {
                 display: none;
             }
             label{
-                width: 160px;
+                width: 167px;
             }
             label:before {
                 display: none;
@@ -197,6 +197,7 @@ body {
         }
     }
     &__label {
+        @include unselect;
         cursor: pointer;
         font-size: 14px;
         padding: 3px;

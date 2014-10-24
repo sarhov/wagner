@@ -434,7 +434,7 @@ body {
 }
 /* line 174, ../sass/filters.scss */
 .filters-options__item_option-line label {
-  width: 160px;
+  width: 167px;
 }
 /* line 177, ../sass/filters.scss */
 .filters-options__item_option-line label:before {
@@ -462,6 +462,12 @@ body {
 }
 /* line 199, ../sass/filters.scss */
 .filters-options__label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
   font-size: 14px;
   padding: 3px;
@@ -473,20 +479,20 @@ body {
   position: relative;
   padding: 3px 0 4px 4px;
 }
-/* line 211, ../sass/filters.scss */
+/* line 212, ../sass/filters.scss */
 .filters-options__label span {
   margin-left: 5px;
   vertical-align: middle;
   text-shadow: 1px 0 1px #F5F5F5;
 }
-/* line 216, ../sass/filters.scss */
+/* line 217, ../sass/filters.scss */
 .filters-options__label_iconed {
   max-height: 47px;
   border: 1px solid transparent;
   line-height: 35px;
   width: 145px;
 }
-/* line 221, ../sass/filters.scss */
+/* line 222, ../sass/filters.scss */
 .filters-options__label_iconed::before {
   width: 39px;
   content: '';
@@ -497,21 +503,21 @@ body {
   border-radius: 4px;
   border: 1px solid #ececec;
 }
-/* line 232, ../sass/filters.scss */
+/* line 233, ../sass/filters.scss */
 .filters-options__label_iconed:hover {
   border-color: #f1f1f1;
 }
-/* line 235, ../sass/filters.scss */
+/* line 236, ../sass/filters.scss */
 .filters-options__label_iconed i {
   position: absolute;
   top: 18px;
   left: 12px;
 }
-/* line 241, ../sass/filters.scss */
+/* line 242, ../sass/filters.scss */
 .filters-options__label_checkbox {
   width: 125px;
 }
-/* line 243, ../sass/filters.scss */
+/* line 244, ../sass/filters.scss */
 .filters-options__label_checkbox::before {
   content: '';
   display: inline-block;
@@ -525,37 +531,37 @@ body {
   transition: 0.3s;
   border-radius: 2px;
 }
-/* line 253, ../sass/filters.scss */
+/* line 254, ../sass/filters.scss */
 .filters-options__item_car-brand input:checked + .filters-options__label_checkbox::before {
   box-shadow: inset 0  0  0px 4px  #444;
 }
-/* line 256, ../sass/filters.scss */
+/* line 257, ../sass/filters.scss */
 .filters-options__label_checkbox:hover {
   opacity: 0.85;
 }
 
-/* line 265, ../sass/filters.scss */
+/* line 266, ../sass/filters.scss */
 .filter-box {
   float: left;
   margin-left: 20px;
   padding-top: 15px;
 }
-/* line 269, ../sass/filters.scss */
+/* line 270, ../sass/filters.scss */
 .filter-box__header {
   font-weight: bold;
   color: #999999;
   margin-bottom: 10px;
 }
-/* line 274, ../sass/filters.scss */
+/* line 275, ../sass/filters.scss */
 .filter-box_price {
   width: 250px;
 }
-/* line 277, ../sass/filters.scss */
+/* line 278, ../sass/filters.scss */
 .filter-box__content_option-line {
   margin-top: -5px;
 }
 
-/* line 282, ../sass/filters.scss */
+/* line 283, ../sass/filters.scss */
 .handler-price {
   position: absolute;
   top: 20px;
@@ -592,12 +598,12 @@ body {
   margin-bottom: -1px;
   border-color: transparent transparent #f7f7f7 transparent;
 }
-/* line 301, ../sass/filters.scss */
+/* line 302, ../sass/filters.scss */
 .handler-price:empty {
   display: none;
 }
 
-/* line 306, ../sass/filters.scss */
+/* line 307, ../sass/filters.scss */
 .price-range {
   margin-bottom: 15px;
   *zoom: 1;
@@ -608,7 +614,7 @@ body {
   display: table;
   clear: both;
 }
-/* line 309, ../sass/filters.scss */
+/* line 310, ../sass/filters.scss */
 .price-range-input {
   border: 2px solid #ececec;
   padding: 3px;
@@ -619,12 +625,12 @@ body {
   float: left;
   width: 120px;
 }
-/* line 318, ../sass/filters.scss */
+/* line 319, ../sass/filters.scss */
 .price-range-input:first-child {
   margin-left: 0;
 }
 
-/* line 324, ../sass/filters.scss */
+/* line 325, ../sass/filters.scss */
 .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
   background: none repeat scroll 0 0 #ececec;
   border: medium none;
@@ -632,7 +638,7 @@ body {
   height: 2px;
 }
 
-/* line 331, ../sass/filters.scss */
+/* line 332, ../sass/filters.scss */
 .ui-state-default.ui-state-default, .ui-widget-content.ui-widget-content .ui-state-default.ui-state-default, .ui-widget-header.ui-widget-header .ui-state-default {
   background: none repeat scroll 0 0 #fe4d4d;
   border: medium none;
@@ -643,7 +649,7 @@ body {
   margin-left: -5px;
 }
 
-/* line 341, ../sass/filters.scss */
+/* line 342, ../sass/filters.scss */
 .ui-slider .ui-slider-range {
   background: #c5c5c5;
 }
