@@ -31,9 +31,12 @@ $(document).ready(function() {
 
   //hide other blocks in row in hover state
   $('.jsBaseSwitcher').hover(function() {
-    $('.filters-block_base .filter-box').not('.filter-box_actions').hide();
-  }, function() { 
-    $('.filters-block_base .filter-box').not('.filter-box_actions').show();
+    var parent = $(this).parents('.filters-block');
+    console.log(parent)
+    parent.find('.filter-box').not('.filter-box_actions').hide();
+    }, function() { 
+var parent = $(this).parents('.filters-block');
+     parent.find('.filter-box').not('.filter-box_actions').show();
 
     //in this part we must be sure that the block  which was hidden because of used option, will not be visible after mouse out
     if ($('#switcher2').is(':checked')) {
@@ -48,7 +51,7 @@ $(document).ready(function() {
 $('.jsAdvancedCall').click(function(event) {
   event.preventDefault();
   $('.filters-block_advanced').toggle();
-  $('.filters-switchers__item').toggleClass('is-advanced');
+  // $('.filters-switchers__item').toggleClass('is-advanced');
 });
 
 

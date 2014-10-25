@@ -250,8 +250,7 @@ body {
 
 /* line 30, ../sass/filters.scss */
 .filters {
-  max-width: 1110px;
-  width: 100%;
+  width: 1110px;
   margin: 0 auto;
   padding: 0px 20px 0px 5px;
   border-top: 2px solid #ececec;
