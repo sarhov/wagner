@@ -14,11 +14,8 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
+*{
+    outline: none
 }
 
 .icons-sprite {
@@ -277,12 +274,13 @@ button:focus {
 
 .filter-box {
     float: left;
-    margin-left: 30px;
+    margin-left: 25px;
     padding-top: 15px;
     &__header {
         font-weight: bold;
         color: #999999;
         margin-bottom: 10px;
+        font-size: 14px;
     }
     &_price {
         width: 250px;
@@ -295,6 +293,14 @@ button:focus {
         width: 120px;
         text-align: center;
     }
+    &__content{
+          &_used{
+        // width: 200px;
+        @include pie-clearfix;
+        margin-top: -5px;
+    }  
+    }
+
 }
 
 .handler-price {
@@ -426,3 +432,123 @@ button:focus {
         background: #fff; 
     }
 }
+
+
+/* the custom select styles */
+
+.filter-box__inner{
+    @include pie-clearfix;
+    margin-bottom: 7px;
+}
+
+.dropdown-filter{
+    width: 94px;
+    float: left; 
+    &:first-child{
+        margin-right: 10px;
+    }
+
+}
+  .myselect {
+    border: 1px solid #ededed;
+    cursor: pointer;
+    display: inline-block;
+  
+    position: relative;
+    height: 38px;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid $base-border-color;
+    line-height: 28px;
+
+  }
+
+
+  .myfiltrvalue{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none; 
+    width: 100%;
+    background: #F7F7F7;
+    z-index: 9999;
+    font-size: 12px;
+    border: 1px solid $base-border-color;
+    line-height: normal;
+    font-weight: bold;
+    text-align: center;
+    color: #777777;
+    border-radius: 5px;
+    border-bottom-width: 2px;
+    box-shadow: 0 1px 3px -6px #dddddd;
+  }
+
+  .myfiltrvalue:before, .myfiltrvalue:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    border-style:solid;
+    border-width:10px;
+    border-color: transparent transparent #ededed transparent;
+    top: -21px;
+    z-index: 1;
+    left: 50%;
+    margin-left: -10px;
+  }
+
+  .myfiltrvalue:after{
+    z-index: 2;
+    border-color: transparent transparent #F7F7F7 transparent;
+    top: -20px;
+  }
+
+  .myfiltrvalue__item{
+    display: block;
+    padding: 2px;
+     color: #777777;
+  }
+
+  .myselect__current {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    font-size: 14px;
+    color: #555;
+      padding: 2px 4px;
+  }
+
+
+  .myselect__current:before{
+    position: absolute; 
+    content: '';
+    border-style:solid;
+    border-width: 4px;
+    border-color:  #777 transparent transparent  transparent;
+    top: 16px;
+    right: 8px;
+  }
+
+  .filter_inner{
+    // height: 120px;
+    // overflow: auto;
+  }
+
+
+  .myselect__current:after{
+    position: absolute; 
+    content: '';
+    border-style:solid;
+    border-width: 4px;
+    border-color:  #fff transparent transparent  transparent;
+    top: 15px;
+    right: 8px;
+  }
+
+
+
+
+  .myfiltrvalue__item:hover {
+    background: none repeat scroll 0 0 #e7e7e7;
+    color: #ffffff;
+  } 

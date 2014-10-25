@@ -233,25 +233,22 @@ body {
 }
 
 /* line 17, ../sass/filters.scss */
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
+* {
   outline: none;
 }
 
-/* line 24, ../sass/filters.scss */
+/* line 21, ../sass/filters.scss */
 .icons-sprite, .icons-icon1, .icons-icon10, .icons-icon11, .icons-icon12, .icons-icon13, .icons-icon14, .icons-icon15, .icons-icon16, .icons-icon17, .icons-icon18, .icons-icon19, .icons-icon2, .icons-icon20, .icons-icon21, .icons-icon22, .icons-icon23, .icons-icon24, .icons-icon25, .icons-icon26, .icons-icon27, .icons-icon28, .icons-icon29, .icons-icon3, .icons-icon4, .icons-icon5, .icons-icon6, .icons-icon7, .icons-icon8, .icons-icon9 {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 29, ../sass/filters.scss */
+/* line 26, ../sass/filters.scss */
 .wrapper {
   padding: 200px 0;
 }
 
-/* line 33, ../sass/filters.scss */
+/* line 30, ../sass/filters.scss */
 .filters {
   max-width: 1110px;
   width: 100%;
@@ -261,7 +258,7 @@ button:focus {
   border-bottom: 1px solid #ececec;
   height: auto;
 }
-/* line 43, ../sass/filters.scss */
+/* line 40, ../sass/filters.scss */
 .filters__form {
   height: 100%;
   *zoom: 1;
@@ -273,24 +270,24 @@ button:focus {
   clear: both;
 }
 
-/* line 49, ../sass/filters.scss */
+/* line 46, ../sass/filters.scss */
 .filters-switchers {
   float: left;
   padding-top: 15px;
 }
-/* line 52, ../sass/filters.scss */
+/* line 49, ../sass/filters.scss */
 .filters-switchers__item {
   margin-bottom: 10px;
 }
-/* line 53, ../sass/filters.scss */
+/* line 50, ../sass/filters.scss */
 .filters-switchers__item_advanced {
   display: none;
 }
-/* line 57, ../sass/filters.scss */
+/* line 54, ../sass/filters.scss */
 .filters-switchers__item input[type="radio"] {
   display: none;
 }
-/* line 60, ../sass/filters.scss */
+/* line 57, ../sass/filters.scss */
 .filters-switchers__item label {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -310,23 +307,23 @@ button:focus {
   vertical-align: middle;
   padding-left: 7px;
 }
-/* line 75, ../sass/filters.scss */
+/* line 72, ../sass/filters.scss */
 .filters-switchers__item label:hover {
   background-color: #fafafa;
   color: #555555;
 }
-/* line 80, ../sass/filters.scss */
+/* line 77, ../sass/filters.scss */
 .filters-switchers__item input[type="radio"]:checked + label {
   font-weight: bold;
   color: #555555;
   background: #e9e9e9;
 }
-/* line 86, ../sass/filters.scss */
+/* line 83, ../sass/filters.scss */
 .filters-switchers__text {
   margin-left: 5px;
 }
 
-/* line 91, ../sass/filters.scss */
+/* line 88, ../sass/filters.scss */
 .filters-options {
   position: relative;
   float: left;
@@ -335,7 +332,7 @@ button:focus {
   padding-top: 15px;
   *zoom: 1;
 }
-/* line 92, ../sass/filters.scss */
+/* line 89, ../sass/filters.scss */
 .filters-options input[type="checkbox"] {
   display: none;
 }
@@ -345,7 +342,7 @@ button:focus {
   display: table;
   clear: both;
 }
-/* line 101, ../sass/filters.scss */
+/* line 98, ../sass/filters.scss */
 .filters-options__switcher {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -359,20 +356,20 @@ button:focus {
   text-align: center;
   width: 100px;
 }
-/* line 109, ../sass/filters.scss */
+/* line 106, ../sass/filters.scss */
 .filters-options__switcher + .filters-options__switcher {
   border-top: none;
 }
-/* line 112, ../sass/filters.scss */
+/* line 109, ../sass/filters.scss */
 .filters-options__switcher:hover {
   background: #fcfcfc;
   border-right-color: #fcfcfc;
 }
-/* line 115, ../sass/filters.scss */
+/* line 112, ../sass/filters.scss */
 .filters-options__switcher:hover > span {
   font-weight: bold;
 }
-/* line 119, ../sass/filters.scss */
+/* line 116, ../sass/filters.scss */
 .filters-options__switcher:after {
   content: '';
   float: right;
@@ -384,11 +381,11 @@ button:focus {
   z-index: 3;
   visibility: hidden;
 }
-/* line 131, ../sass/filters.scss */
+/* line 128, ../sass/filters.scss */
 .filters-options__switcher:hover:after {
   visibility: visible;
 }
-/* line 136, ../sass/filters.scss */
+/* line 133, ../sass/filters.scss */
 .filters-options__values {
   position: absolute;
   left: 100%;
@@ -403,62 +400,62 @@ button:focus {
   display: none;
   padding: 10px 15px  12px 5px;
 }
-/* line 150, ../sass/filters.scss */
+/* line 147, ../sass/filters.scss */
 .filters-options__switcher:hover .filters-options__values {
   display: block;
 }
-/* line 153, ../sass/filters.scss */
+/* line 150, ../sass/filters.scss */
 .filters-options__values_car-type {
   width: 630px;
 }
-/* line 156, ../sass/filters.scss */
+/* line 153, ../sass/filters.scss */
 .filters-options__values_car-brand {
   width: 430px;
 }
-/* line 161, ../sass/filters.scss */
+/* line 158, ../sass/filters.scss */
 .filters-options__values_car-variant {
   width: 430px;
 }
-/* line 165, ../sass/filters.scss */
+/* line 162, ../sass/filters.scss */
 .filters-options__item {
   float: left;
   text-align: left;
   margin-left: 7px;
   margin-bottom: 0px;
 }
-/* line 170, ../sass/filters.scss */
+/* line 167, ../sass/filters.scss */
 .filters-options__item input:checked + .filters-options__label_iconed:before {
   background-color: #e9e9e9;
   border-color: #d7d7d7;
 }
-/* line 174, ../sass/filters.scss */
+/* line 171, ../sass/filters.scss */
 .filters-options__item input:checked + label {
   color: #555;
   font-weight: bold;
 }
-/* line 178, ../sass/filters.scss */
+/* line 175, ../sass/filters.scss */
 .filters-options__item_option-line {
   float: none;
   margin-bottom: 1px;
   margin-left: 0;
 }
-/* line 183, ../sass/filters.scss */
+/* line 180, ../sass/filters.scss */
 .filters-options__item_option-line input[type="checkbox"] {
   display: none;
 }
-/* line 186, ../sass/filters.scss */
+/* line 183, ../sass/filters.scss */
 .filters-options__item_option-line label {
   width: 167px;
 }
-/* line 189, ../sass/filters.scss */
+/* line 186, ../sass/filters.scss */
 .filters-options__item_option-line label:before {
   display: none;
 }
-/* line 192, ../sass/filters.scss */
+/* line 189, ../sass/filters.scss */
 .filters-options__item_option-line i {
   position: static !important;
 }
-/* line 195, ../sass/filters.scss */
+/* line 192, ../sass/filters.scss */
 .filters-options__item_option-line figure {
   display: inline-block;
   vertical-align: middle;
@@ -469,12 +466,12 @@ button:focus {
   margin: 0;
   border-radius: 4px;
 }
-/* line 205, ../sass/filters.scss */
+/* line 202, ../sass/filters.scss */
 .filters-options__item_option-line input:checked + .filters-options__label_iconed figure {
   background-color: #e9e9e9;
   border-color: #d7d7d7;
 }
-/* line 211, ../sass/filters.scss */
+/* line 208, ../sass/filters.scss */
 .filters-options__label {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -493,20 +490,20 @@ button:focus {
   position: relative;
   padding: 3px 0 4px 4px;
 }
-/* line 224, ../sass/filters.scss */
+/* line 221, ../sass/filters.scss */
 .filters-options__label span {
   margin-left: 5px;
   vertical-align: middle;
   text-shadow: 1px 0 1px #F5F5F5;
 }
-/* line 229, ../sass/filters.scss */
+/* line 226, ../sass/filters.scss */
 .filters-options__label_iconed {
   max-height: 47px;
   border: 1px solid transparent;
   line-height: 35px;
   width: 145px;
 }
-/* line 234, ../sass/filters.scss */
+/* line 231, ../sass/filters.scss */
 .filters-options__label_iconed::before {
   width: 39px;
   content: '';
@@ -517,21 +514,21 @@ button:focus {
   border-radius: 4px;
   border: 1px solid #ececec;
 }
-/* line 245, ../sass/filters.scss */
+/* line 242, ../sass/filters.scss */
 .filters-options__label_iconed:hover {
   border-color: #f1f1f1;
 }
-/* line 248, ../sass/filters.scss */
+/* line 245, ../sass/filters.scss */
 .filters-options__label_iconed i {
   position: absolute;
   top: 18px;
   left: 12px;
 }
-/* line 254, ../sass/filters.scss */
+/* line 251, ../sass/filters.scss */
 .filters-options__label_checkbox {
   width: 125px;
 }
-/* line 256, ../sass/filters.scss */
+/* line 253, ../sass/filters.scss */
 .filters-options__label_checkbox::before {
   content: '';
   display: inline-block;
@@ -545,43 +542,55 @@ button:focus {
   transition: 0.3s;
   border-radius: 2px;
 }
-/* line 266, ../sass/filters.scss */
+/* line 263, ../sass/filters.scss */
 .filters-options__item_car-brand input:checked + .filters-options__label_checkbox::before {
   box-shadow: inset 0  0  0px 4px  #444;
 }
-/* line 269, ../sass/filters.scss */
+/* line 266, ../sass/filters.scss */
 .filters-options__label_checkbox:hover {
   opacity: 0.85;
 }
 
-/* line 278, ../sass/filters.scss */
+/* line 275, ../sass/filters.scss */
 .filter-box {
   float: left;
-  margin-left: 30px;
+  margin-left: 25px;
   padding-top: 15px;
 }
-/* line 282, ../sass/filters.scss */
+/* line 279, ../sass/filters.scss */
 .filter-box__header {
   font-weight: bold;
   color: #999999;
   margin-bottom: 10px;
+  font-size: 14px;
 }
-/* line 287, ../sass/filters.scss */
+/* line 285, ../sass/filters.scss */
 .filter-box_price {
   width: 250px;
 }
-/* line 290, ../sass/filters.scss */
+/* line 288, ../sass/filters.scss */
 .filter-box__content_option-line {
   margin-top: -5px;
 }
-/* line 293, ../sass/filters.scss */
+/* line 291, ../sass/filters.scss */
 .filter-box_actions {
   float: right;
   width: 120px;
   text-align: center;
 }
+/* line 297, ../sass/filters.scss */
+.filter-box__content_used {
+  *zoom: 1;
+  margin-top: -5px;
+}
+/* line 38, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+.filter-box__content_used:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/* line 300, ../sass/filters.scss */
+/* line 306, ../sass/filters.scss */
 .handler-price {
   position: absolute;
   top: 20px;
@@ -618,12 +627,12 @@ button:focus {
   margin-bottom: -1px;
   border-color: transparent transparent #f7f7f7 transparent;
 }
-/* line 319, ../sass/filters.scss */
+/* line 325, ../sass/filters.scss */
 .handler-price:empty {
   display: none;
 }
 
-/* line 324, ../sass/filters.scss */
+/* line 330, ../sass/filters.scss */
 .price-range {
   margin-bottom: 15px;
   *zoom: 1;
@@ -634,7 +643,7 @@ button:focus {
   display: table;
   clear: both;
 }
-/* line 327, ../sass/filters.scss */
+/* line 333, ../sass/filters.scss */
 .price-range-input {
   border: 2px solid #ececec;
   padding: 3px;
@@ -645,12 +654,12 @@ button:focus {
   float: left;
   width: 120px;
 }
-/* line 336, ../sass/filters.scss */
+/* line 342, ../sass/filters.scss */
 .price-range-input:first-child {
   margin-left: 0;
 }
 
-/* line 342, ../sass/filters.scss */
+/* line 348, ../sass/filters.scss */
 .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
   background: none repeat scroll 0 0 #ececec;
   border: medium none;
@@ -658,7 +667,7 @@ button:focus {
   height: 2px;
 }
 
-/* line 349, ../sass/filters.scss */
+/* line 355, ../sass/filters.scss */
 .ui-state-default.ui-state-default, .ui-widget-content.ui-widget-content .ui-state-default.ui-state-default, .ui-widget-header.ui-widget-header .ui-state-default {
   background: none repeat scroll 0 0 #fe4d4d;
   border: medium none;
@@ -669,17 +678,17 @@ button:focus {
   margin-left: -5px;
 }
 
-/* line 359, ../sass/filters.scss */
+/* line 365, ../sass/filters.scss */
 .ui-slider .ui-slider-range {
   background: #c5c5c5;
 }
 
-/* line 363, ../sass/filters.scss */
+/* line 369, ../sass/filters.scss */
 .filter-reset, .advanced-filter-call, .form-submit {
   margin-bottom: 10px;
 }
 
-/* line 367, ../sass/filters.scss */
+/* line 373, ../sass/filters.scss */
 .advanced-filter-call {
   display: block;
   width: 120px;
@@ -695,19 +704,19 @@ button:focus {
   font-size: 14px;
   padding: 6px 0;
 }
-/* line 381, ../sass/filters.scss */
+/* line 387, ../sass/filters.scss */
 .advanced-filter-call:hover {
   background: #f3f3f3;
   color: #777777;
 }
-/* line 385, ../sass/filters.scss */
+/* line 391, ../sass/filters.scss */
 .advanced-filter-call.is-active {
   border-color: #c9c9c9;
   color: #777;
   background: #fff;
 }
 
-/* line 393, ../sass/filters.scss */
+/* line 399, ../sass/filters.scss */
 .filter-reset {
   background: none;
   border: none;
@@ -717,12 +726,12 @@ button:focus {
   text-shadow: 1px 0 1px #F5F5F5;
   font-size: 14px;
 }
-/* line 401, ../sass/filters.scss */
+/* line 407, ../sass/filters.scss */
 .filter-reset:hover {
   text-decoration: none;
 }
 
-/* line 406, ../sass/filters.scss */
+/* line 412, ../sass/filters.scss */
 .form-submit {
   padding: 6px 0;
   color: #fff;
@@ -736,15 +745,138 @@ button:focus {
   width: 120px;
   cursor: pointer;
 }
-/* line 418, ../sass/filters.scss */
+/* line 424, ../sass/filters.scss */
 .form-submit:hover {
   background: #ed6b6b;
   border-color: #ed6b6b;
   border-bottom-color: #df6667;
 }
-/* line 423, ../sass/filters.scss */
+/* line 429, ../sass/filters.scss */
 .form-submit.is-active {
   border-color: #ed6b6b;
   color: #ed6b6b;
   background: #fff;
+}
+
+/* the custom select styles */
+/* line 439, ../sass/filters.scss */
+.filter-box__inner {
+  *zoom: 1;
+  margin-bottom: 7px;
+}
+/* line 38, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+.filter-box__inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 444, ../sass/filters.scss */
+.dropdown-filter {
+  width: 94px;
+  float: left;
+}
+/* line 447, ../sass/filters.scss */
+.dropdown-filter:first-child {
+  margin-right: 10px;
+}
+
+/* line 452, ../sass/filters.scss */
+.myselect {
+  border: 1px solid #ededed;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  height: 38px;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #ececec;
+  line-height: 28px;
+}
+
+/* line 467, ../sass/filters.scss */
+.myfiltrvalue {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+  width: 100%;
+  background: #F7F7F7;
+  z-index: 9999;
+  font-size: 12px;
+  border: 1px solid #ececec;
+  line-height: normal;
+  font-weight: bold;
+  text-align: center;
+  color: #777777;
+  border-radius: 5px;
+  border-bottom-width: 2px;
+  box-shadow: 0 1px 3px -6px #dddddd;
+}
+
+/* line 486, ../sass/filters.scss */
+.myfiltrvalue:before, .myfiltrvalue:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent #ededed transparent;
+  top: -21px;
+  z-index: 1;
+  left: 50%;
+  margin-left: -10px;
+}
+
+/* line 499, ../sass/filters.scss */
+.myfiltrvalue:after {
+  z-index: 2;
+  border-color: transparent transparent #F7F7F7 transparent;
+  top: -20px;
+}
+
+/* line 505, ../sass/filters.scss */
+.myfiltrvalue__item {
+  display: block;
+  padding: 2px;
+  color: #777777;
+}
+
+/* line 511, ../sass/filters.scss */
+.myselect__current {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  font-size: 14px;
+  color: #555;
+  padding: 2px 4px;
+}
+
+/* line 522, ../sass/filters.scss */
+.myselect__current:before {
+  position: absolute;
+  content: '';
+  border-style: solid;
+  border-width: 4px;
+  border-color: #777 transparent transparent  transparent;
+  top: 16px;
+  right: 8px;
+}
+
+/* line 538, ../sass/filters.scss */
+.myselect__current:after {
+  position: absolute;
+  content: '';
+  border-style: solid;
+  border-width: 4px;
+  border-color: #fff transparent transparent  transparent;
+  top: 15px;
+  right: 8px;
+}
+
+/* line 551, ../sass/filters.scss */
+.myfiltrvalue__item:hover {
+  background: none repeat scroll 0 0 #e7e7e7;
+  color: #ffffff;
 }

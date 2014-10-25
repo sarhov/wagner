@@ -3,9 +3,11 @@ $(document).ready(function() {
   function checkUsed(){
     if ($('#switcher2').is(':checked')) {
       $('.jsUsedHidden').hide();
+      $('.filter-box_used').show()
     }
     else{
       $('.jsUsedHidden').show();
+       $('.filter-box_used').hide()
 
     }
   }
@@ -14,9 +16,10 @@ $(document).ready(function() {
   checkUsed()
 
   //run the function above, on click
-  $('.filters-switchers__item').click(function() {
+  $('.filters-switchers__item, .filter-reset').click(function() {
     checkUsed();
   });
+
 
 
   //toggle active state to be sure that styles for active states are working
@@ -36,8 +39,44 @@ $(document).ready(function() {
     if ($('#switcher2').is(':checked')) {
      $('.jsUsedHidden').hide();
    }
+   else{
+     $('.filter-box_used').hide()
+   }
  });
+
+
+
 
 
   // ready
 });
+
+//custom select
+function customSelect (theselect, thevalue) {
+
+  var SELECT = $('#'+ theselect).hide();
+  var SELECTVALUE = $('#' + thevalue);
+  SELECTVALUE.append('<div class="myfiltrvalue"><div class="filter_inner"/></div></div>')
+  
+  SELECT.find('option').each(function(index) {
+    var optionValue = $(this).val();
+    var optionTitle = $(this).html();
+    SELECTVALUE.find('.filter_inner').append('<span class="myfiltrvalue__item" value="'+ optionValue +'"> '+ optionTitle +' </span>')
+  });
+  
+  var curentTitlte = SELECT.find(':selected').html();
+  SELECTVALUE.prepend('<span class="myselect__current">'+ curentTitlte +'</span>');
+  SELECTVALUE.children('span').click(function(event) {
+    $(this).next('div').fadeToggle('fast');
+    SELECTVALUE.toggleClass('active');
+  });
+  SELECTVALUE.find('div span').click(function() {
+
+    SELECTVALUE.find('.myselect__current').html($(this).html());
+    SELECTVALUE.find('.myfiltrvalue').fadeToggle();
+    var needOption = ($(this).attr('value'))
+    SELECTVALUE.toggleClass('active');
+    SELECT.find(' option[value="'+ needOption +'"]').attr('selected', 'selected').siblings().attr('selected', false).parent('select').change();
+  });
+}
+  

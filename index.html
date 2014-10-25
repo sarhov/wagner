@@ -21,7 +21,7 @@
 
           <div class="filter-box filter-box_actions">
             <div class="filter-box__content filter-box__content_actions">
-              <input type="reset" value="Сбросить" class="filter-reset">
+              <input type="button" value="Сбросить" class="filter-reset" onClick="this.form.reset()">
               <a  href="#" class="advanced-filter-call big-button jsAdvancedCall">
                 Расширеный Фильтр
               </a>
@@ -238,6 +238,131 @@
      <!-- /.filters-options__item -->
    </div>
    <!-- /.filters-option filters-options_main -->
+
+   <div class="filter-box filter-box_used">
+
+     <div class="filter-box__inner filter-box__inner_psuedo">
+       <div class="filter-box__header">
+         Год выпуска
+       </div>
+       <!-- /.filter-box__header -->
+       <div class="filter-box__content filter-box__content_used">
+
+
+         <div class="dropdown-filter dropdown-filter_year year-from">
+           <select  name="yearfrom" id="yearform" class="myfiltr" style="display:none;">
+           <option value="" class="year-option">от</option>
+           <option value="2001" class="year-option">2001</option>
+           <option value="2002" class="year-option">2002</option>
+           <option value="2003" class="year-option">2003</option>
+           <option value="2004" class="year-option">2004</option>
+           <option value="2005" class="year-option">2005</option>
+           <option value="2006" class="year-option">2006</option>
+           <option value="2007" class="year-option">2007</option>
+         </select>  
+         <div class="collection-actions__sorting custom-select">
+          <div class="collection-actions__sorting_pseudo-select myselect " id="yearfromvalue">
+          </div>
+          <!-- collection-actions__soriting_psuedo-select -->
+        </div>
+        <!-- collection-action__sorting -->
+        <script>
+             $(document).ready(function() {
+                customSelect('yearform', 'yearfromvalue');
+             });
+        </script>
+         </div>
+         <!-- /.dropdown-filter dropdown-filter_year year-from -->
+         <div class="dropdown-filter dropdown-filter_year year-to">
+                   <select  name="yearto" id="yearto" class="myfiltr" style="display:none;">
+           <option value="" class="year-option">до</option>
+           <option value="2001" class="year-option">2001</option>
+           <option value="2002" class="year-option">2002</option>
+           <option value="2003" class="year-option">2003</option>
+           <option value="2004" class="year-option">2004</option>
+           <option value="2005" class="year-option">2005</option>
+           <option value="2006" class="year-option">2006</option>
+           <option value="2007" class="year-option">2007</option>
+         </select>  
+         <div class="collection-actions__sorting custom-select">
+          <div class="collection-actions__sorting_pseudo-select myselect " id="yeartovalue">
+          </div>
+          <!-- collection-actions__soriting_psuedo-select -->
+        </div>
+        <!-- collection-action__sorting -->
+        <script>
+             $(document).ready(function() {
+                customSelect('yearto', 'yeartovalue');
+             });
+        </script>
+         </div>
+         <!-- /.dropdown-filter dropdown-filter_year year-to -->
+       </div>
+       <!-- /.filter-box__content filter-box__content_used -->
+     </div>
+     <!-- /.filter-box__inner filter-box__inner_psuedo -->
+
+     <div class="filter-box__inner filter-box__inner_psuedo">
+       <div class="filter-box__header">
+         Пробег
+       </div>
+       <!-- /.filter-box__header -->
+       <div class="filter-box__content filter-box__content_used">
+        <div class="dropdown-filter dropdown-filter_year year-from">
+          <select  name="probeg" id="probegfrom" class="myfiltr" style="display:none;">
+          <option value="" class="year-option">от</option>
+          <option value="001" class="year-option">001</option>
+          <option value="002" class="year-option">002</option>
+          <option value="003" class="year-option">003</option>
+          <option value="004" class="year-option">004</option>
+          <option value="005" class="year-option">005</option>
+          <option value="006" class="year-option">006</option>
+          <option value="007" class="year-option">007</option>
+        </select>  
+        <div class="collection-actions__sorting custom-select">
+         <div class="collection-actions__sorting_pseudo-select myselect " id="probegfromvalue">
+         </div>
+         <!-- collection-actions__soriting_psuedo-select -->
+       </div>
+       <!-- collection-action__sorting -->
+       <script>
+            $(document).ready(function() {
+               customSelect('probegfrom', 'probegfromvalue');
+            });
+       </script>
+        </div>
+        <!-- /.dropdown-filter dropdown-filter_year year-from -->
+        <div class="dropdown-filter dropdown-filter_year year-to">
+                  <select  name="probegto" id="probegto" class="myfiltr" style="display:none;">
+          <option value="" class="year-option">до</option>
+          <option value="001" class="year-option">001</option>
+          <option value="002" class="year-option">002</option>
+          <option value="003" class="year-option">003</option>
+          <option value="004" class="year-option">004</option>
+          <option value="005" class="year-option">005</option>
+          <option value="006" class="year-option">006</option>
+          <option value="007" class="year-option">007</option>
+        </select>  
+        <div class="collection-actions__sorting custom-select">
+         <div class="collection-actions__sorting_pseudo-select myselect " id="probegtovalue">
+         </div>
+         <!-- collection-actions__soriting_psuedo-select -->
+       </div>
+       <!-- collection-action__sorting -->
+       <script>
+            $(document).ready(function() {
+               customSelect('probegto', 'probegtovalue');
+            });
+       </script>
+        </div>
+        <!-- /.dropdown-filter dropdown-filter_year year-to -->
+       </div>
+       <!-- /.filter-box__content filter-box__content_used -->
+     </div>
+     <!-- /.filter-box__inner filter-box__inner_psuedo -->
+
+   </div>
+   <!-- /.filter-box filter-box_used -->
 
    <div class="filter-box filter-box_price">
     <div class="filter-box__header">Цена (т.р.)</div>
