@@ -477,6 +477,7 @@ body {
   @include pie-clearfix;
   &_advanced{
     border-top: 1px solid $base-border-color;
+    display: none;
   }
 }
 

@@ -45,6 +45,11 @@ $(document).ready(function() {
  });
 
 
+$('.jsAdvancedCall').click(function(event) {
+  event.preventDefault();
+  $('.filters-block_advanced').toggle()
+});
+
 
 
 

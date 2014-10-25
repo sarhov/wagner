@@ -820,10 +820,11 @@ body {
 /* line 478, ../sass/filters.scss */
 .filters-block_advanced {
   border-top: 1px solid #ececec;
+  display: none;
 }
 
 /* the custom select styles */
-/* line 486, ../sass/filters.scss */
+/* line 487, ../sass/filters.scss */
 .filter-box__inner {
   *zoom: 1;
   margin-bottom: 7px;
@@ -835,17 +836,17 @@ body {
   clear: both;
 }
 
-/* line 491, ../sass/filters.scss */
+/* line 492, ../sass/filters.scss */
 .dropdown-filter {
   width: 94px;
   float: left;
 }
-/* line 494, ../sass/filters.scss */
+/* line 495, ../sass/filters.scss */
 .dropdown-filter:first-child {
   margin-right: 10px;
 }
 
-/* line 499, ../sass/filters.scss */
+/* line 500, ../sass/filters.scss */
 .myselect {
   border: 1px solid #ededed;
   cursor: pointer;
@@ -858,7 +859,7 @@ body {
   line-height: 28px;
 }
 
-/* line 514, ../sass/filters.scss */
+/* line 515, ../sass/filters.scss */
 .myfiltrvalue {
   position: absolute;
   top: 50px;
@@ -878,7 +879,7 @@ body {
   box-shadow: 0 1px 3px -6px #dddddd;
 }
 
-/* line 533, ../sass/filters.scss */
+/* line 534, ../sass/filters.scss */
 .myfiltrvalue:before, .myfiltrvalue:after {
   content: '';
   position: absolute;
@@ -892,21 +893,21 @@ body {
   margin-left: -10px;
 }
 
-/* line 546, ../sass/filters.scss */
+/* line 547, ../sass/filters.scss */
 .myfiltrvalue:after {
   z-index: 2;
   border-color: transparent transparent #F7F7F7 transparent;
   top: -20px;
 }
 
-/* line 552, ../sass/filters.scss */
+/* line 553, ../sass/filters.scss */
 .myfiltrvalue__item {
   display: block;
   padding: 2px;
   color: #777777;
 }
 
-/* line 558, ../sass/filters.scss */
+/* line 559, ../sass/filters.scss */
 .myselect__current {
   display: block;
   width: 100%;
@@ -917,7 +918,7 @@ body {
   padding: 2px 4px;
 }
 
-/* line 569, ../sass/filters.scss */
+/* line 570, ../sass/filters.scss */
 .myselect__current:before {
   position: absolute;
   content: '';
@@ -928,7 +929,7 @@ body {
   right: 8px;
 }
 
-/* line 585, ../sass/filters.scss */
+/* line 586, ../sass/filters.scss */
 .myselect__current:after {
   position: absolute;
   content: '';
@@ -939,7 +940,7 @@ body {
   right: 8px;
 }
 
-/* line 598, ../sass/filters.scss */
+/* line 599, ../sass/filters.scss */
 .myfiltrvalue__item:hover {
   background: none repeat scroll 0 0 #e7e7e7;
   color: #ffffff;
