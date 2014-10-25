@@ -30,10 +30,10 @@ $(document).ready(function() {
 
 
   //hide other blocks in row in hover state
-  $('.filters-options__switcher').hover(function() {
-    $('.filters-base .filter-box').not('.filter-box_actions').hide();
+  $('.jsBaseSwitcher').hover(function() {
+    $('.filters-block_base .filter-box').not('.filter-box_actions').hide();
   }, function() { 
-    $('.filters-base .filter-box').not('.filter-box_actions').show();
+    $('.filters-block_base .filter-box').not('.filter-box_actions').show();
 
     //in this part we must be sure that the block  which was hidden because of used option, will not be visible after mouse out
     if ($('#switcher2').is(':checked')) {
