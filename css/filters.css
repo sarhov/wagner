@@ -277,17 +277,32 @@ body {
 }
 /* line 49, ../sass/filters.scss */
 .filters-switchers__item {
+  color: #777;
   margin-bottom: 10px;
 }
-/* line 50, ../sass/filters.scss */
+/* line 51, ../sass/filters.scss */
 .filters-switchers__item_advanced {
   display: none;
 }
 /* line 54, ../sass/filters.scss */
+.filters-switchers__item.is-advanced {
+  display: block;
+  text-align: center;
+  padding: 0;
+}
+/* line 58, ../sass/filters.scss */
+.filters-switchers__item.is-advanced span {
+  margin: 0;
+}
+/* line 61, ../sass/filters.scss */
+.filters-switchers__item.is-advanced i {
+  display: none;
+}
+/* line 66, ../sass/filters.scss */
 .filters-switchers__item input[type="radio"] {
   display: none;
 }
-/* line 57, ../sass/filters.scss */
+/* line 69, ../sass/filters.scss */
 .filters-switchers__item label {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -302,28 +317,28 @@ body {
   height: 37px;
   width: 120px;
   font-size: 14px;
-  color: #333;
+  color: #777;
   cursor: pointer;
   vertical-align: middle;
   padding-left: 7px;
 }
-/* line 72, ../sass/filters.scss */
+/* line 84, ../sass/filters.scss */
 .filters-switchers__item label:hover {
   background-color: #fafafa;
   color: #555555;
 }
-/* line 77, ../sass/filters.scss */
+/* line 89, ../sass/filters.scss */
 .filters-switchers__item input[type="radio"]:checked + label {
   font-weight: bold;
   color: #555555;
   background: #e9e9e9;
 }
-/* line 83, ../sass/filters.scss */
+/* line 95, ../sass/filters.scss */
 .filters-switchers__text {
   margin-left: 5px;
 }
 
-/* line 88, ../sass/filters.scss */
+/* line 100, ../sass/filters.scss */
 .filters-options {
   position: relative;
   float: left;
@@ -332,7 +347,7 @@ body {
   padding-top: 15px;
   *zoom: 1;
 }
-/* line 89, ../sass/filters.scss */
+/* line 101, ../sass/filters.scss */
 .filters-options_advanced {
   margin-left: 0;
 }
@@ -342,7 +357,7 @@ body {
   display: table;
   clear: both;
 }
-/* line 99, ../sass/filters.scss */
+/* line 111, ../sass/filters.scss */
 .filters-options__switcher {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -356,24 +371,24 @@ body {
   text-align: center;
   width: 100px;
 }
-/* line 107, ../sass/filters.scss */
+/* line 119, ../sass/filters.scss */
 .filters-options__switcher > span {
   color: #777;
 }
-/* line 111, ../sass/filters.scss */
+/* line 123, ../sass/filters.scss */
 .filters-options__switcher + .filters-options__switcher {
   border-top: none;
 }
-/* line 114, ../sass/filters.scss */
+/* line 126, ../sass/filters.scss */
 .filters-options__switcher:hover {
   background: #fcfcfc;
   border-right-color: #fcfcfc;
 }
-/* line 117, ../sass/filters.scss */
+/* line 129, ../sass/filters.scss */
 .filters-options__switcher:hover > span {
   font-weight: bold;
 }
-/* line 121, ../sass/filters.scss */
+/* line 133, ../sass/filters.scss */
 .filters-options__switcher:after {
   content: '';
   float: right;
@@ -385,16 +400,16 @@ body {
   z-index: 3;
   visibility: hidden;
 }
-/* line 133, ../sass/filters.scss */
+/* line 145, ../sass/filters.scss */
 .filters-options__switcher:hover:after {
   visibility: visible;
 }
-/* line 137, ../sass/filters.scss */
+/* line 149, ../sass/filters.scss */
 .filters-options__switcher_advanced {
   width: 145px;
   text-align: center;
 }
-/* line 142, ../sass/filters.scss */
+/* line 154, ../sass/filters.scss */
 .filters-options__values {
   position: absolute;
   left: 100%;
@@ -409,67 +424,67 @@ body {
   display: none;
   padding: 10px 15px  12px 5px;
 }
-/* line 156, ../sass/filters.scss */
+/* line 168, ../sass/filters.scss */
 .filters-options__switcher:hover .filters-options__values {
   display: block;
 }
-/* line 159, ../sass/filters.scss */
+/* line 171, ../sass/filters.scss */
 .filters-options__values_car-type {
   width: 630px;
 }
-/* line 162, ../sass/filters.scss */
+/* line 174, ../sass/filters.scss */
 .filters-options__values_car-brand {
   width: 430px;
 }
-/* line 167, ../sass/filters.scss */
+/* line 179, ../sass/filters.scss */
 .filters-options__values_car-variant {
   width: 430px;
 }
-/* line 171, ../sass/filters.scss */
+/* line 183, ../sass/filters.scss */
 .filters-options__item {
   float: left;
   text-align: left;
   margin-left: 7px;
   margin-bottom: 0px;
 }
-/* line 172, ../sass/filters.scss */
+/* line 184, ../sass/filters.scss */
 .filters-options__item input[type="checkbox"] {
   display: none;
 }
-/* line 180, ../sass/filters.scss */
+/* line 192, ../sass/filters.scss */
 .filters-options__item input:checked + .filters-options__label_iconed:before {
   background-color: #e9e9e9;
   border-color: #d7d7d7;
 }
-/* line 184, ../sass/filters.scss */
+/* line 196, ../sass/filters.scss */
 .filters-options__item input:checked + label {
   color: #555;
   font-weight: bold;
 }
-/* line 188, ../sass/filters.scss */
+/* line 200, ../sass/filters.scss */
 .filters-options__item_option-line {
   float: none;
   margin-bottom: 1px;
   margin-left: 0;
   margin-left: -5px;
 }
-/* line 194, ../sass/filters.scss */
+/* line 206, ../sass/filters.scss */
 .filters-options__item_option-line input[type="checkbox"] {
   display: none;
 }
-/* line 197, ../sass/filters.scss */
+/* line 209, ../sass/filters.scss */
 .filters-options__item_option-line label {
   width: 167px;
 }
-/* line 200, ../sass/filters.scss */
+/* line 212, ../sass/filters.scss */
 .filters-options__item_option-line label:before {
   display: none;
 }
-/* line 203, ../sass/filters.scss */
+/* line 215, ../sass/filters.scss */
 .filters-options__item_option-line i {
   position: static !important;
 }
-/* line 206, ../sass/filters.scss */
+/* line 218, ../sass/filters.scss */
 .filters-options__item_option-line figure {
   display: inline-block;
   vertical-align: middle;
@@ -480,16 +495,16 @@ body {
   margin: 0;
   border-radius: 4px;
 }
-/* line 216, ../sass/filters.scss */
+/* line 228, ../sass/filters.scss */
 .filters-options__item_option-line input:checked + .filters-options__label_iconed figure {
   background-color: #e9e9e9;
   border-color: #d7d7d7;
 }
-/* line 221, ../sass/filters.scss */
+/* line 233, ../sass/filters.scss */
 .filters-options__item_advanced {
   margin-left: 0;
 }
-/* line 225, ../sass/filters.scss */
+/* line 237, ../sass/filters.scss */
 .filters-options__label {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -508,20 +523,20 @@ body {
   position: relative;
   padding: 3px 0 4px 4px;
 }
-/* line 238, ../sass/filters.scss */
+/* line 250, ../sass/filters.scss */
 .filters-options__label span {
   margin-left: 5px;
   vertical-align: middle;
   text-shadow: 1px 0 1px #F5F5F5;
 }
-/* line 243, ../sass/filters.scss */
+/* line 255, ../sass/filters.scss */
 .filters-options__label_iconed {
   max-height: 47px;
   border: 1px solid transparent;
   line-height: 35px;
   width: 145px;
 }
-/* line 248, ../sass/filters.scss */
+/* line 260, ../sass/filters.scss */
 .filters-options__label_iconed::before {
   width: 39px;
   content: '';
@@ -532,22 +547,22 @@ body {
   border-radius: 4px;
   border: 1px solid #ececec;
 }
-/* line 259, ../sass/filters.scss */
+/* line 271, ../sass/filters.scss */
 .filters-options__label_iconed:hover {
   border-color: #f1f1f1;
 }
-/* line 262, ../sass/filters.scss */
+/* line 274, ../sass/filters.scss */
 .filters-options__label_iconed i {
   position: absolute;
   top: 18px;
   left: 12px;
 }
-/* line 268, ../sass/filters.scss */
+/* line 280, ../sass/filters.scss */
 .filters-options__label_checkbox {
   width: 105px;
   padding-left: 19px;
 }
-/* line 271, ../sass/filters.scss */
+/* line 283, ../sass/filters.scss */
 .filters-options__label_checkbox::before {
   content: '';
   left: 1px;
@@ -560,7 +575,7 @@ body {
   vertical-align: middle;
   border-radius: 2px;
 }
-/* line 283, ../sass/filters.scss */
+/* line 295, ../sass/filters.scss */
 .filters-options__label_checkbox::after {
   background: none repeat scroll 0 0 #471f1f;
   content: "";
@@ -580,46 +595,46 @@ body {
   -webkit-transform: scale(0);
   transform: scale(0);
 }
-/* line 296, ../sass/filters.scss */
+/* line 308, ../sass/filters.scss */
 .filters-options__item_car-brand input:checked + .filters-options__label_checkbox::after {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/* line 300, ../sass/filters.scss */
+/* line 312, ../sass/filters.scss */
 .filters-options__label_checkbox:hover {
   opacity: 0.85;
 }
 
-/* line 309, ../sass/filters.scss */
+/* line 321, ../sass/filters.scss */
 .filter-box {
   float: left;
   margin-left: 25px;
   padding-top: 15px;
 }
-/* line 313, ../sass/filters.scss */
+/* line 325, ../sass/filters.scss */
 .filter-box__header {
   font-weight: bold;
   color: #999999;
   margin-bottom: 10px;
   font-size: 14px;
 }
-/* line 319, ../sass/filters.scss */
+/* line 331, ../sass/filters.scss */
 .filter-box_price {
   width: 250px;
 }
-/* line 322, ../sass/filters.scss */
+/* line 334, ../sass/filters.scss */
 .filter-box__content_option-line {
   margin-top: -5px;
 }
-/* line 325, ../sass/filters.scss */
+/* line 337, ../sass/filters.scss */
 .filter-box_actions {
   float: right;
   width: 120px;
   text-align: center;
 }
-/* line 331, ../sass/filters.scss */
+/* line 343, ../sass/filters.scss */
 .filter-box__content_used {
   *zoom: 1;
   margin-top: -5px;
@@ -630,20 +645,20 @@ body {
   display: table;
   clear: both;
 }
-/* line 336, ../sass/filters.scss */
+/* line 348, ../sass/filters.scss */
 .filter-box__content_checkbox {
   margin-top: -6px;
 }
-/* line 340, ../sass/filters.scss */
+/* line 352, ../sass/filters.scss */
 .filter-box_power {
   width: 210px;
 }
-/* line 343, ../sass/filters.scss */
+/* line 355, ../sass/filters.scss */
 .filter-box_motor {
   width: 110px;
 }
 
-/* line 349, ../sass/filters.scss */
+/* line 361, ../sass/filters.scss */
 .handler-price {
   position: absolute;
   top: 20px;
@@ -680,12 +695,12 @@ body {
   margin-bottom: -1px;
   border-color: transparent transparent #f7f7f7 transparent;
 }
-/* line 368, ../sass/filters.scss */
+/* line 380, ../sass/filters.scss */
 .handler-price:empty {
   display: none;
 }
 
-/* line 373, ../sass/filters.scss */
+/* line 385, ../sass/filters.scss */
 .price-range {
   margin-bottom: 15px;
   *zoom: 1;
@@ -696,7 +711,7 @@ body {
   display: table;
   clear: both;
 }
-/* line 376, ../sass/filters.scss */
+/* line 388, ../sass/filters.scss */
 .price-range-input {
   border: 2px solid #ececec;
   padding: 3px;
@@ -707,12 +722,12 @@ body {
   float: left;
   width: 120px;
 }
-/* line 385, ../sass/filters.scss */
+/* line 397, ../sass/filters.scss */
 .price-range-input:first-child {
   margin-left: 0;
 }
 
-/* line 391, ../sass/filters.scss */
+/* line 403, ../sass/filters.scss */
 .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
   background: none repeat scroll 0 0 #ececec;
   border: medium none;
@@ -720,7 +735,7 @@ body {
   height: 2px;
 }
 
-/* line 398, ../sass/filters.scss */
+/* line 410, ../sass/filters.scss */
 .ui-state-default.ui-state-default, .ui-widget-content.ui-widget-content .ui-state-default.ui-state-default, .ui-widget-header.ui-widget-header .ui-state-default {
   background: none repeat scroll 0 0 #fe4d4d;
   border: medium none;
@@ -731,17 +746,17 @@ body {
   margin-left: -5px;
 }
 
-/* line 408, ../sass/filters.scss */
+/* line 420, ../sass/filters.scss */
 .ui-slider .ui-slider-range {
   background: #c5c5c5;
 }
 
-/* line 412, ../sass/filters.scss */
+/* line 424, ../sass/filters.scss */
 .filter-reset, .advanced-filter-call, .form-submit {
   margin-bottom: 10px;
 }
 
-/* line 416, ../sass/filters.scss */
+/* line 428, ../sass/filters.scss */
 .advanced-filter-call {
   display: block;
   width: 120px;
@@ -757,19 +772,19 @@ body {
   font-size: 14px;
   padding: 6px 0;
 }
-/* line 430, ../sass/filters.scss */
+/* line 442, ../sass/filters.scss */
 .advanced-filter-call:hover {
   background: #f3f3f3;
   color: #777777;
 }
-/* line 434, ../sass/filters.scss */
+/* line 446, ../sass/filters.scss */
 .advanced-filter-call.is-active {
   border-color: #c9c9c9;
   color: #777;
   background: #fff;
 }
 
-/* line 442, ../sass/filters.scss */
+/* line 454, ../sass/filters.scss */
 .filter-reset {
   background: none;
   border: none;
@@ -779,12 +794,12 @@ body {
   text-shadow: 1px 0 1px #F5F5F5;
   font-size: 14px;
 }
-/* line 450, ../sass/filters.scss */
+/* line 462, ../sass/filters.scss */
 .filter-reset:hover {
   text-decoration: none;
 }
 
-/* line 455, ../sass/filters.scss */
+/* line 467, ../sass/filters.scss */
 .form-submit {
   padding: 6px 0;
   color: #fff;
@@ -798,20 +813,20 @@ body {
   width: 120px;
   cursor: pointer;
 }
-/* line 467, ../sass/filters.scss */
+/* line 479, ../sass/filters.scss */
 .form-submit:hover {
   background: #ed6b6b;
   border-color: #ed6b6b;
   border-bottom-color: #df6667;
 }
-/* line 472, ../sass/filters.scss */
+/* line 484, ../sass/filters.scss */
 .form-submit.is-active {
   border-color: #ed6b6b;
   color: #ed6b6b;
   background: #fff;
 }
 
-/* line 479, ../sass/filters.scss */
+/* line 491, ../sass/filters.scss */
 .filters-block {
   *zoom: 1;
 }
@@ -821,14 +836,14 @@ body {
   display: table;
   clear: both;
 }
-/* line 481, ../sass/filters.scss */
+/* line 493, ../sass/filters.scss */
 .filters-block_advanced {
   border-top: 1px solid #ececec;
   display: none;
 }
 
 /* the custom select styles */
-/* line 490, ../sass/filters.scss */
+/* line 502, ../sass/filters.scss */
 .filter-box__inner {
   *zoom: 1;
   margin-bottom: 7px;
@@ -840,17 +855,17 @@ body {
   clear: both;
 }
 
-/* line 495, ../sass/filters.scss */
+/* line 507, ../sass/filters.scss */
 .dropdown-filter {
   width: 94px;
   float: left;
 }
-/* line 498, ../sass/filters.scss */
+/* line 510, ../sass/filters.scss */
 .dropdown-filter:first-child {
   margin-right: 10px;
 }
 
-/* line 503, ../sass/filters.scss */
+/* line 515, ../sass/filters.scss */
 .myselect {
   border: 1px solid #ededed;
   cursor: pointer;
@@ -863,7 +878,7 @@ body {
   line-height: 28px;
 }
 
-/* line 518, ../sass/filters.scss */
+/* line 530, ../sass/filters.scss */
 .myfiltrvalue {
   position: absolute;
   top: 50px;
@@ -883,7 +898,7 @@ body {
   box-shadow: 0 1px 3px -6px #dddddd;
 }
 
-/* line 537, ../sass/filters.scss */
+/* line 549, ../sass/filters.scss */
 .myfiltrvalue:before, .myfiltrvalue:after {
   content: '';
   position: absolute;
@@ -897,21 +912,21 @@ body {
   margin-left: -10px;
 }
 
-/* line 550, ../sass/filters.scss */
+/* line 562, ../sass/filters.scss */
 .myfiltrvalue:after {
   z-index: 2;
   border-color: transparent transparent #F7F7F7 transparent;
   top: -20px;
 }
 
-/* line 556, ../sass/filters.scss */
+/* line 568, ../sass/filters.scss */
 .myfiltrvalue__item {
   display: block;
   padding: 2px;
   color: #777777;
 }
 
-/* line 562, ../sass/filters.scss */
+/* line 574, ../sass/filters.scss */
 .myselect__current {
   display: block;
   width: 100%;
@@ -922,7 +937,7 @@ body {
   padding: 2px 4px;
 }
 
-/* line 573, ../sass/filters.scss */
+/* line 585, ../sass/filters.scss */
 .myselect__current:before {
   position: absolute;
   content: '';
@@ -933,7 +948,7 @@ body {
   right: 8px;
 }
 
-/* line 589, ../sass/filters.scss */
+/* line 601, ../sass/filters.scss */
 .myselect__current:after {
   position: absolute;
   content: '';
@@ -944,7 +959,7 @@ body {
   right: 8px;
 }
 
-/* line 602, ../sass/filters.scss */
+/* line 614, ../sass/filters.scss */
 .myfiltrvalue__item:hover {
   background: none repeat scroll 0 0 #e7e7e7;
   color: #ffffff;

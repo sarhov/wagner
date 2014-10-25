@@ -47,7 +47,8 @@ $(document).ready(function() {
 
 $('.jsAdvancedCall').click(function(event) {
   event.preventDefault();
-  $('.filters-block_advanced').toggle()
+  $('.filters-block_advanced').toggle();
+  $('.filters-switchers__item').toggleClass('is-advanced');
 });
 
 

@@ -47,8 +47,20 @@ body {
     float: left;
     padding-top: 15px;
     &__item {
+      color: #777;
         &_advanced {
             display: none;
+        }
+        &.is-advanced{
+          display: block;
+          text-align: center;
+          padding: 0;
+          span{
+            margin: 0;
+          }
+          i{
+            display: none;
+          }
         }
         margin-bottom: 10px;
         input[type="radio"] {
@@ -64,7 +76,7 @@ body {
             height: 37px;
             width: 120px;
             font-size: 14px;
-            color: $base-button-color;
+            color: #777;
             cursor: pointer;
             vertical-align: middle;
             padding-left: 7px;
