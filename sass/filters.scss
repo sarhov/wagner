@@ -267,14 +267,17 @@ body {
         }
         &_checkbox {
             width: 105px;
+            padding-left: 19px;
             &::before {
                 content: '';
+                left: 1px;
+                top:7px;
                 display: inline-block;
                 width: 16px;
+                position: absolute;
                 height: 16px;
                 background: #e1e1e1;
                 vertical-align: middle;
-               
                 border-radius: 2px;
             }
             &::after{ 
@@ -282,7 +285,7 @@ body {
               content: "";
               display: inline-block;
               height: 8px;
-              left: 8px;
+              left: 5px;
               position: absolute;
               top: 11px;
               width: 8px;
