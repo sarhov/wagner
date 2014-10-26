@@ -19,6 +19,15 @@
     user-select: none;
 }
 
+// 
+// @TODO: Add docs to media!
+//
+@mixin media($size) {
+  @media only screen and (max-width: $size){
+    @content
+  }
+}
+
 $base-border-color: #ececec;
 $base-button-color: #333;
 

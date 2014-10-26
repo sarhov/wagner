@@ -13,6 +13,10 @@ body {
     background: #fff;
     font-family: 'PT Sans', sans-serif;
 }
+html, body{
+    margin: 0;
+    padding: 0;
+}
 
 *{
     outline: none
@@ -24,15 +28,27 @@ body {
 }
 
 .wrapper {
-    padding: 200px 0;
+   // overflow: hidden;
 }
 
 .filters {
-    width: 1110px;
+    width: 1100px;
     // width: 100%;
+    overflow: hidden;
+    // width: 840px;
     margin: 0 auto;
     // background:#ddd;
     padding: 0px 20px 0px 5px;
+    @include media(825px){
+        padding-right: 0;
+        width: 825px;
+    }
+    @include media(540px){
+        width: 540px;
+    }
+    @include media(255px){
+        width: 255px;
+    }
     border-top: 2px solid #ececec;
     border-bottom: 1px solid #ececec;
     // min-height: 165px;
@@ -165,11 +181,15 @@ body {
         z-index: 3;
         display: none;
         padding: 10px 15px  12px 5px;
-        @at-root         .filters-options__switcher:hover & {
+        @at-root       .desktop  .filters-options__switcher:hover & {
             display: block;
         }
         &_car-type {
             width: 630px;
+            @include media(825px){
+                width: 500px;
+                overflow: auto;
+            }
         }
         &_car-brand {
             width: 430px;
@@ -280,6 +300,9 @@ body {
         &_checkbox {
             width: 105px;
             padding-left: 19px;
+            @include media (825px){
+                width: 97px;
+            }
             &::before {
                 content: '';
                 left: 1px;
@@ -320,7 +343,7 @@ body {
 
 .filter-box {
     float: left;
-    margin-left: 25px;
+    margin-left: 14px;
     padding-top: 15px;
     &__header {
         font-weight: bold;
@@ -330,6 +353,9 @@ body {
     }
     &_price {
         width: 250px;
+        @include media(825px){
+            width: 220px;
+        }
     }
     &__content_option-line{
         margin-top: -5px;
@@ -351,11 +377,21 @@ body {
     }
     &_power{
       width: 210px;
+      @include media(825px){
+        width: 195px;
+      }
     }
     &_motor{
       width: 110px;
+      @include media(825px){
+        width: 100px;
+      }
     }
-
+    @include media(825px){
+        .jsKorobka{
+            display: none;
+        }
+    }
 }
 
 .handler-price {
@@ -394,6 +430,10 @@ body {
         border-radius: 5px;
         float: left;
         width: 120px;
+        @include media(825px){
+            width: 105px;
+            margin-left: 7px;
+        }
         &:first-child {
             margin-left: 0;
         }
@@ -509,6 +549,9 @@ body {
     float: left; 
     &:first-child{
         margin-right: 10px;
+    }
+    @include media(825px){
+        width: 90px;
     }
 
 }
