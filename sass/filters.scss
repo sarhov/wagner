@@ -47,7 +47,10 @@ html, body{
         width: 540px;
     }
     @include media(255px){
-        width: 255px;
+        width: 100%;
+        padding-left: 0;
+        max-width: 255px;
+        // min-width: 255px;
     }
     border-top: 2px solid #ececec;
     border-bottom: 1px solid #ececec;
@@ -62,7 +65,22 @@ html, body{
 .filters-switchers {
     float: left;
     padding-top: 15px;
+    @include media(255px){
+        float: none;
+        margin-bottom: 10px;
+        @include pie-clearfix;
+    }
     &__item {
+        @include media(255px){
+            width: 120px;
+            width: 48%;
+            margin-left: 4%;
+            float: left;
+            margin-bottom: 0;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
       color: #777;
         &_advanced {
             display: none;
@@ -105,6 +123,14 @@ html, body{
                     display: none;
                 }
             }
+            @include media(255px){
+                width: 100%;
+                // margin-left: 10px;
+               
+                span{ 
+                    display: inline-block;
+                }
+            }
             &:hover {
                 background-color: #fafafa;
                 color: #555555;
@@ -135,6 +161,12 @@ html, body{
     @include media(540px){
         margin-left: 15px;
     }
+    @include media(255px){
+        padding-top: 0;
+        margin-left: 0;
+        width: 100%;
+        @include pie-clearfix;
+    }
     @include pie-clearfix;
     &__switcher {
         @include unselect;
@@ -144,6 +176,11 @@ html, body{
         height: 44px;
         text-align: center;
         width: 100px;
+        @include media(255px){
+              float: left;
+        width: 33.33%;
+        }
+      
         > span{
        color: #777;
         }
@@ -392,6 +429,9 @@ html, body{
     float: left;
     margin-left: 14px;
     padding-top: 15px;
+    @include media(255px){
+        margin-left: 0;
+    }
     &__header {
         font-weight: bold;
         color: #999999;

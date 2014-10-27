@@ -12,7 +12,7 @@
   <a href="#" class="size">540px</a>
   <a href="#" class="size">255px</a>
 </div>
-  <iframe src="iframe.html" frameborder="0" align="middle"></iframe>  
+  <iframe src="iframe.html" id="iframe" frameborder="0" align="middle" ></iframe>  
 </body>
 </html>
 
@@ -20,25 +20,51 @@
 body, html{
   padding: 0;
   margin: 0;
+  height: 100%;
+  min-height:100%;
+  overflow: hidden;
 }
+
+/**, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}*/
+
   iframe{
     display: block;
     width: 1100px;
     overflow: hidden;
-    margin: 20px auto 100px;
-    height: 400px;
-    border-radius: 4px;
-    border: 2px solid #444;
+    height: 600px;
+    /*border-radius: 4px;*/
+    border: 1px solid #444;
     padding: 15px;
     /*transition: all 0.8s ease-in-out;*/
+    padding-top: 100px;
+    height: 100%;
+
+    margin: auto;
+    margin-top: 51px;
+    border-top: none;
+    border-bottom: none;
+    padding: 15px;
+    /*padding-top: 50px;*/
   }
 .sizes{
-  width: 1110px;
-  margin: auto;
-  margin-top: 150px;
+  margin: auto;    
+  position: fixed;
+    top:0;
+  left: 0; 
+   background:#ddd;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
 }
   .size{
     display: inline-block;
+   
+    text-align: center;
+    padding: 10px;
     margin: 0 5px;
     border-radius: 4px;
     border: 1px solid #000;
@@ -48,7 +74,8 @@ body, html{
     padding: 5px 25px;
     font-size: 16px;
     font-family: sans-serif;
-    border-bottom-width: 2px
+    border-bottom-width: 2px;
+
   }
   .size:hover{
     opacity: 0.8;
@@ -61,8 +88,21 @@ body, html{
 </style>
 <script>
   $('.size').click(function(event) {
+    window.updateIframe();
     event.preventDefault();
     $(this).addClass('active').siblings().removeClass('active');
     $('iframe').css({"width": $(this).text()})
   });
-</script>
+
+
+
+</script> <script>
+ $(function() {
+   window.updateIframe = function() {
+     var h = $(window).height();
+     $("#iframe").height(h - 80);
+   }
+   window.updateIframe();
+   window.resize(window.updateIframe);
+ });
+ </script>

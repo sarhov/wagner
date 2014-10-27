@@ -39,6 +39,10 @@ if ($(window).width() <= 825) {
   var block =  $('.jsUsedHidden').detach();
   $('.filters-block_advanced > div:last-child').after(block)
 }
+else if ($(window).width() > 825) {
+  var block =  $('.jsUsedHidden').detach();
+ $('.jsUsedMiddle').after(block)
+}
 // move that block back to it's place (base filter block)
 if ($(window).width() <= 540) {
   var block =  $('.jsUsedHidden').detach();
@@ -48,6 +52,16 @@ if ($(window).width() <= 540) {
 if ($(window).width() <= 540) {
   $('.price-range-input').val('')
 };
+
+if ($(window).width() <= 255) { 
+  var action = $('.filter-box_actions').detach();
+  $('.filters-block_advanced').after(action);
+}
+else if ($(window).width() > 255) { 
+  var action = $('.filter-box_actions').detach();
+  $('.filters-switchers').before(action);
+}
+
 }
 
   //run function to check if used fuction is checked
