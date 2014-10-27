@@ -19,6 +19,7 @@
     user-select: none;
 }
 
+
 // 
 // @TODO: Add docs to media!
 //
@@ -26,6 +27,13 @@
   @media only screen and (max-width: $size){
     @content
   }
+}
+.small-show{
+    display: none;  
+}
+@include media(540px){
+    .small-hide{display: none;}
+    .small-show{display: block;}
 }
 
 $base-border-color: #ececec;

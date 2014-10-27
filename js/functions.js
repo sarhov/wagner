@@ -1,37 +1,61 @@
 $(document).ready(function() {
-  //check if used option is checked
+  // the function for checking if radio check and the window width
   function checkUsed(){
+    //check if used option is checked
     if ($('#switcher2').is(':checked')) {
-      if ($(window).width() > 825) {
+
+      if ($(window).width() > 825 || $(window).width() <= 540  ) {
        $('.jsUsedHidden').hide();
      }
-     
-     $('.filter-box_used').show()
-     if ($(window).width() <= 825) {
+     else{
+      $('.jsUsedHidden').show();
+    }
+    $('.filter-box_used').show()
+    if ($(window).width() <= 825) {
       $('.jsUsedMiddle').hide();  
     }
+
   }
   else{
-    if ($(window).width() > 825) {
+
+  if ($(window).width() > 825 ){
      $('.jsUsedHidden').show();
    }
-   $('.filter-box_used').hide()
-   $('.jsUsedMiddle').show();  
+   else if ($(window).width() <= 540 ){
+    $('.jsUsedHidden').hide();
+  }
+  if ($(window).width() <= 540 ) {
+    $('.jsUsedHidden').show();
+  };
+  $('.filter-box_used').hide()
+  $('.jsUsedMiddle').show();  
 
- }
- if ($(window).width() <= 825) {
+}
+
+/*just window checks*/
+
+// in middle version  we move the block from base filter block into advanced
+if ($(window).width() <= 825) {
   var block =  $('.jsUsedHidden').detach();
   $('.filters-block_advanced > div:last-child').after(block)
 }
+// move that block back to it's place (base filter block)
+if ($(window).width() <= 540) {
+  var block =  $('.jsUsedHidden').detach();
+  $('.jsUsedMiddle').after(block)
+}
+// to show placeholders  remove values
+if ($(window).width() <= 540) {
+  $('.price-range-input').val('')
+};
 }
 
   //run function to check if used fuction is checked
   checkUsed();
+
+  // on windows resize
   $(window).on('resize', function(){
    checkUsed();
-      // var win = $(this); //this = window
-      // if (win.width() <= 825) { /* ... */ }
-      // if (win.width() >= 1280) { /* ... */ }
     });
 
   //run the function above, on click
@@ -51,7 +75,7 @@ $(document).ready(function() {
   //hide other blocks in row in hover state
   $('.jsBaseSwitcher').hover(function() {
     var parent = $(this).parents('.filters-block');
-    console.log(parent)
+    //console.log(parent)
     parent.find('.filter-box').not('.filter-box_actions').hide();
   }, function() { 
     var parent = $(this).parents('.filters-block');
@@ -62,12 +86,12 @@ $(document).ready(function() {
       if ($(window).width() <= 825) {
         $('.jsUsedMiddle').hide();  
       }
- if ($(window).width() > 825) {
-     $('.jsUsedHidden').hide();
+      if ($(window).width() > 825 || $(window).width() <= 540) {
+       $('.jsUsedHidden').hide();
+     }
+
    }
-    
-    }
-    else{
+   else{
      $('.filter-box_used').hide()
    }
  });
