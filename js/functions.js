@@ -1,4 +1,32 @@
 $(document).ready(function() {
+// check for mobile or desktop device
+  var isMobile = {
+    Android: function() {
+      return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+      return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+      return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+      return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+      return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+  };
+  if(isMobile.any()) {
+    $('body').addClass('mobile');
+  }
+  else{
+    $('body').addClass('desktop')
+  }
+
   // the function for checking if radio check and the window width
   function checkUsed(){
     //check if used option is checked
@@ -18,7 +46,7 @@ $(document).ready(function() {
   }
   else{
 
-  if ($(window).width() > 825 ){
+    if ($(window).width() > 825 ){
      $('.jsUsedHidden').show();
    }
    else if ($(window).width() <= 540 ){
@@ -41,7 +69,7 @@ if ($(window).width() <= 825) {
 }
 else if ($(window).width() > 825) {
   var block =  $('.jsUsedHidden').detach();
- $('.jsUsedMiddle').after(block)
+  $('.jsUsedMiddle').after(block)
 }
 // move that block back to it's place (base filter block)
 if ($(window).width() <= 540) {
@@ -70,7 +98,7 @@ else if ($(window).width() > 255) {
   // on windows resize
   $(window).on('resize', function(){
    checkUsed();
-    });
+ });
 
   //run the function above, on click
   $('.filters-switchers__item, .filter-reset').click(function() {
@@ -86,6 +114,9 @@ else if ($(window).width() > 255) {
   });
 
 
+    function hoverorclick(){
+
+  if ($('body').hasClass('desktop')) {
   //hide other blocks in row in hover state
   $('.jsBaseSwitcher').hover(function() {
     var parent = $(this).parents('.filters-block');
@@ -109,7 +140,45 @@ else if ($(window).width() > 255) {
      $('.filter-box_used').hide()
    }
  });
+}  
 
+else if ($('body').hasClass('mobile')) {
+
+    //hide other blocks in row in hover state
+  $('.jsBaseSwitcher').click(function() {
+    var parent = $(this).parents('.filters-block');
+    //console.log(parent)
+    if ($(this).hasClass('active')) {
+       parent.find('.filter-box').not('.filter-box_actions').show();
+           //in this part we must be sure that the block  which was hidden because of used option, will not be visible after mouse out
+    if ($('#switcher2').is(':checked')) { 
+      if ($(window).width() <= 825) {
+        $('.jsUsedMiddle').hide();  
+      }
+      if ($(window).width() > 825 || $(window).width() <= 540) {
+       $('.jsUsedHidden').hide();
+     }
+
+
+   }    else{
+     $('.filter-box_used').hide()
+   }
+       $(this).removeClass('active')
+    }
+    else{
+      $(this).toggleClass('active').siblings().removeClass('active')
+      parent.find('.filter-box').not('.filter-box_actions').hide();
+    }
+
+
+  });
+};
+
+
+
+    }
+
+hoverorclick();
 
   $('.jsAdvancedCall').click(function(event) {
     event.preventDefault();
@@ -117,46 +186,6 @@ else if ($(window).width() > 255) {
   // $('.filters-switchers__item').toggleClass('is-advanced');
 });
 
-
-  var isMobile = {
-    Android: function() {
-      return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-      return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-      return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-      return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-      return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-  };
-  if(isMobile.any()) {
-    $('body').addClass('mobile');
-  }
-  else{
-    $('body').addClass('desktop')
-  }
-// $('.mobile .header-menu a').on('click', function (e) {
-// e.preventDefault();
-// if ($(this).parents('li:first').hasClass('hassub')) {
-// var $this = $(this).parents('li:first');
-// if ($this.hasClass('touch-active')) {
-// location.href = $(this).attr('href');
-// } else {
-// $('.touch .header-menu li').removeClass('touch-active');
-// $this.addClass('touch-active');
-// }
-// } else {
-// location.href = $(this).attr('href');
-// }
 
 
   // ready

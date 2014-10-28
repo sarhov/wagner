@@ -294,7 +294,7 @@ html, body {
         display: none;
         padding: 10px 15px  12px 5px;
         overflow: auto;
-        @at-root         .desktop  .filters-options__switcher:hover & {
+        @at-root         .desktop  .filters-options__switcher:hover &,   .desktop  .filters-options__switcher.active &{
             display: block;
         }
         @include media(255px){
@@ -451,6 +451,9 @@ html, body {
                 border-color: #f1f1f1;
                 @include media(540px) {
                     border-color: transparent;
+                    @at-root .filters-options &{
+                        border-color: #f1f1f1;
+                    }
                 }
             }
             i {
@@ -458,6 +461,7 @@ html, body {
                 top: 18px;
                 left: 12px;
             }
+
         }
         &_checkbox {
             width: 105px;
