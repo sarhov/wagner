@@ -3,7 +3,7 @@ wagner
 
 файли которые нужни
 
-frame.html >>> от     <div class="filters"> </div> - .wrapper можно не взять
+frame.html >>> от     `<div class="filters"> </div>` - .wrapper можно не взять
 папка less
 папка js
 папка img - здесь нужно только спрайт, отделние иконки для работоспособности не нужни.
