@@ -237,7 +237,7 @@ html, body {
                 }
             }
         }
-        &:hover:after {
+        &:hover:after, &.active:after {
             // display: block;
             visibility: visible;
         }
@@ -265,7 +265,18 @@ html, body {
                 }
             }
         }
+        @include media(255px){
+            .filters-options__values{
+                border-top-color: transparent;
+                margin-top: 0;
+            }
+            &:hover, &.active{
+                border-bottom-color: transparent;
+            }
         }
+
+        }
+
 
     }
     &__values {
