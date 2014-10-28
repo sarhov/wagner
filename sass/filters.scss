@@ -232,6 +232,9 @@ html, body {
                 margin-bottom:-1px;
                 display: block;
                 margin-right: 0;
+                @at-root .filters-options_advanced &{  
+                    bottom: -1px;
+                }
             }
         }
         &:hover:after {
@@ -254,9 +257,7 @@ html, body {
                 padding-top: 15px;
                 line-height: 1;     
                 }
-            }
-        }
-        &:last-child{
+            }        &:last-child{
             @include media(255px){
                 span{
                     display: block;
@@ -264,6 +265,8 @@ html, body {
                 }
             }
         }
+        }
+
     }
     &__values {
         position: absolute;

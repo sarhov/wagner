@@ -541,24 +541,28 @@ html, body {
     display: block;
     margin-right: 0;
   }
+  /* line 235, ../sass/filters.scss */
+  .filters-options_advanced .filters-options__switcher:after {
+    bottom: -1px;
+  }
 }
-/* line 237, ../sass/filters.scss */
+/* line 240, ../sass/filters.scss */
 .filters-options__switcher:hover:after {
   visibility: visible;
 }
-/* line 242, ../sass/filters.scss */
+/* line 245, ../sass/filters.scss */
 .filters-options__switcher_advanced {
   width: 145px;
   text-align: center;
 }
 @media all and (max-width: 255px) {
-  /* line 242, ../sass/filters.scss */
+  /* line 245, ../sass/filters.scss */
   .filters-options__switcher_advanced {
     width: 33.33%;
     line-height: 1.2;
     font-size: 13px;
   }
-  /* line 250, ../sass/filters.scss */
+  /* line 253, ../sass/filters.scss */
   .filters-options__switcher_advanced > span {
     display: block;
     padding-top: 15px;
@@ -566,13 +570,13 @@ html, body {
   }
 }
 @media all and (max-width: 255px) {
-  /* line 261, ../sass/filters.scss */
-  .filters-options__switcher:last-child span {
+  /* line 262, ../sass/filters.scss */
+  .filters-options__switcher_advanced:last-child span {
     display: block;
     padding-top: 8px;
   }
 }
-/* line 268, ../sass/filters.scss */
+/* line 271, ../sass/filters.scss */
 .filters-options__values {
   position: absolute;
   left: 100%;
@@ -588,12 +592,12 @@ html, body {
   padding: 10px 15px  12px 5px;
   overflow: auto;
 }
-/* line 283, ../sass/filters.scss */
+/* line 286, ../sass/filters.scss */
 .desktop .filters-options__switcher:hover .filters-options__values {
   display: block;
 }
 @media all and (max-width: 255px) {
-  /* line 268, ../sass/filters.scss */
+  /* line 271, ../sass/filters.scss */
   .filters-options__values {
     left: 0;
     top: 100%;
@@ -606,65 +610,65 @@ html, body {
     border-top: 1px solid #ececec;
   }
 }
-/* line 297, ../sass/filters.scss */
+/* line 300, ../sass/filters.scss */
 .filters-options__values_car-type {
   width: 630px;
 }
 @media all and (max-width: 825px) {
-  /* line 297, ../sass/filters.scss */
+  /* line 300, ../sass/filters.scss */
   .filters-options__values_car-type {
     width: 500px;
     overflow: auto;
   }
 }
 @media all and (max-width: 540px) {
-  /* line 297, ../sass/filters.scss */
+  /* line 300, ../sass/filters.scss */
   .filters-options__values_car-type {
     width: 381px;
   }
 }
-/* line 308, ../sass/filters.scss */
+/* line 311, ../sass/filters.scss */
 .filters-options__values_car-brand {
   width: 430px;
 }
 @media all and (max-width: 540px) {
-  /* line 308, ../sass/filters.scss */
+  /* line 311, ../sass/filters.scss */
   .filters-options__values_car-brand {
     width: 381px;
   }
 }
-/* line 317, ../sass/filters.scss */
+/* line 320, ../sass/filters.scss */
 .filters-options__values_car-variant {
   width: 430px;
 }
 @media all and (max-width: 540px) {
-  /* line 317, ../sass/filters.scss */
+  /* line 320, ../sass/filters.scss */
   .filters-options__values_car-variant {
     width: 381px;
   }
 }
-/* line 324, ../sass/filters.scss */
+/* line 327, ../sass/filters.scss */
 .filters-options__item {
   float: left;
   text-align: left;
   margin-left: 7px;
   margin-bottom: 0px;
 }
-/* line 325, ../sass/filters.scss */
+/* line 328, ../sass/filters.scss */
 .filters-options__item input[type="checkbox"] {
   display: none;
 }
-/* line 332, ../sass/filters.scss */
+/* line 335, ../sass/filters.scss */
 .filters-options__item input:checked + .filters-options__label_iconed:before {
   background-color: #e9e9e9;
   border-color: #d7d7d7;
 }
-/* line 336, ../sass/filters.scss */
+/* line 339, ../sass/filters.scss */
 .filters-options__item input:checked + label {
   color: #555;
   font-weight: bold;
 }
-/* line 340, ../sass/filters.scss */
+/* line 343, ../sass/filters.scss */
 .filters-options__item_option-line {
   float: none;
   margin-bottom: 1px;
@@ -672,53 +676,53 @@ html, body {
   margin-left: -5px;
 }
 @media all and (max-width: 540px) {
-  /* line 340, ../sass/filters.scss */
+  /* line 343, ../sass/filters.scss */
   .filters-options__item_option-line {
     float: left;
     margin-left: 5px;
   }
-  /* line 348, ../sass/filters.scss */
+  /* line 351, ../sass/filters.scss */
   .filters-options__item_option-line:first-child {
     margin-left: 0;
   }
-  /* line 351, ../sass/filters.scss */
+  /* line 354, ../sass/filters.scss */
   .filter-box_advanced-last .filters-options__item_option-line {
     float: none;
     margin-left: 0;
   }
-  /* line 355, ../sass/filters.scss */
+  /* line 358, ../sass/filters.scss */
   .filter-box_advanced-last {
     margin-top: 10px;
   }
 }
-/* line 361, ../sass/filters.scss */
+/* line 364, ../sass/filters.scss */
 .filters-options__item_option-line input[type="checkbox"] {
   display: none;
 }
-/* line 364, ../sass/filters.scss */
+/* line 367, ../sass/filters.scss */
 .filters-options__item_option-line label {
   width: 167px;
 }
 @media all and (max-width: 540px) {
-  /* line 364, ../sass/filters.scss */
+  /* line 367, ../sass/filters.scss */
   .filters-options__item_option-line label {
     width: 40px;
     padding: 0;
   }
-  /* line 369, ../sass/filters.scss */
+  /* line 372, ../sass/filters.scss */
   .filters-options__item_option-line label span {
     display: none;
   }
 }
-/* line 374, ../sass/filters.scss */
+/* line 377, ../sass/filters.scss */
 .filters-options__item_option-line label:before {
   display: none;
 }
-/* line 377, ../sass/filters.scss */
+/* line 380, ../sass/filters.scss */
 .filters-options__item_option-line i {
   position: static !important;
 }
-/* line 380, ../sass/filters.scss */
+/* line 383, ../sass/filters.scss */
 .filters-options__item_option-line figure {
   display: inline-block;
   vertical-align: middle;
@@ -729,20 +733,20 @@ html, body {
   margin: 0;
   border-radius: 4px;
 }
-/* line 389, ../sass/filters.scss */
+/* line 392, ../sass/filters.scss */
 .filters-options__item_option-line figure:hover {
   background: #FAFAFA;
 }
-/* line 393, ../sass/filters.scss */
+/* line 396, ../sass/filters.scss */
 .filters-options__item_option-line input:checked + .filters-options__label_iconed figure {
   background-color: #e9e9e9;
   border-color: #d7d7d7;
 }
-/* line 398, ../sass/filters.scss */
+/* line 401, ../sass/filters.scss */
 .filters-options__item_advanced {
   margin-left: 0;
 }
-/* line 402, ../sass/filters.scss */
+/* line 405, ../sass/filters.scss */
 .filters-options__label {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -761,20 +765,20 @@ html, body {
   position: relative;
   padding: 3px 0 4px 4px;
 }
-/* line 415, ../sass/filters.scss */
+/* line 418, ../sass/filters.scss */
 .filters-options__label span {
   margin-left: 5px;
   vertical-align: middle;
   text-shadow: 1px 0 1px #F5F5F5;
 }
-/* line 420, ../sass/filters.scss */
+/* line 423, ../sass/filters.scss */
 .filters-options__label_iconed {
   max-height: 47px;
   border: 1px solid transparent;
   line-height: 35px;
   width: 145px;
 }
-/* line 425, ../sass/filters.scss */
+/* line 428, ../sass/filters.scss */
 .filters-options__label_iconed::before {
   width: 39px;
   content: '';
@@ -785,34 +789,34 @@ html, body {
   border-radius: 4px;
   border: 1px solid #ececec;
 }
-/* line 436, ../sass/filters.scss */
+/* line 439, ../sass/filters.scss */
 .filters-options__label_iconed:hover {
   border-color: #f1f1f1;
 }
 @media all and (max-width: 540px) {
-  /* line 436, ../sass/filters.scss */
+  /* line 439, ../sass/filters.scss */
   .filters-options__label_iconed:hover {
     border-color: transparent;
   }
 }
-/* line 442, ../sass/filters.scss */
+/* line 445, ../sass/filters.scss */
 .filters-options__label_iconed i {
   position: absolute;
   top: 18px;
   left: 12px;
 }
-/* line 448, ../sass/filters.scss */
+/* line 451, ../sass/filters.scss */
 .filters-options__label_checkbox {
   width: 105px;
   padding-left: 19px;
 }
 @media all and (max-width: 825px) {
-  /* line 448, ../sass/filters.scss */
+  /* line 451, ../sass/filters.scss */
   .filters-options__label_checkbox {
     width: 97px;
   }
 }
-/* line 455, ../sass/filters.scss */
+/* line 458, ../sass/filters.scss */
 .filters-options__label_checkbox::before {
   content: '';
   left: 1px;
@@ -825,7 +829,7 @@ html, body {
   vertical-align: middle;
   border-radius: 2px;
 }
-/* line 467, ../sass/filters.scss */
+/* line 470, ../sass/filters.scss */
 .filters-options__label_checkbox::after {
   background: none repeat scroll 0 0 #471f1f;
   content: "";
@@ -845,31 +849,31 @@ html, body {
   -webkit-transform: scale(0);
   transform: scale(0);
 }
-/* line 480, ../sass/filters.scss */
+/* line 483, ../sass/filters.scss */
 .filters-options__item_car-brand input:checked + .filters-options__label_checkbox::after {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/* line 483, ../sass/filters.scss */
+/* line 486, ../sass/filters.scss */
 .filters-options__label_checkbox:hover {
   opacity: 0.85;
 }
 
-/* line 492, ../sass/filters.scss */
+/* line 495, ../sass/filters.scss */
 .filter-box {
   float: left;
   margin-left: 14px;
   padding-top: 15px;
 }
 @media all and (max-width: 255px) {
-  /* line 492, ../sass/filters.scss */
+  /* line 495, ../sass/filters.scss */
   .filter-box {
     margin-left: 0;
   }
 }
-/* line 500, ../sass/filters.scss */
+/* line 503, ../sass/filters.scss */
 .filter-box__header {
   font-weight: bold;
   color: #999999;
@@ -877,47 +881,47 @@ html, body {
   font-size: 14px;
 }
 @media all and (max-width: 540px) {
-  /* line 506, ../sass/filters.scss */
+  /* line 509, ../sass/filters.scss */
   .filters-block_base .filter-box__header {
     margin-bottom: 12px;
     margin-left: 2px;
   }
 }
-/* line 512, ../sass/filters.scss */
+/* line 515, ../sass/filters.scss */
 .filter-box_price {
   width: 250px;
 }
 @media all and (max-width: 825px) {
-  /* line 512, ../sass/filters.scss */
+  /* line 515, ../sass/filters.scss */
   .filter-box_price {
     width: 220px;
   }
 }
 @media all and (max-width: 540px) {
-  /* line 519, ../sass/filters.scss */
+  /* line 522, ../sass/filters.scss */
   .filter-box_price .filter-box__header {
     display: none;
   }
 }
 @media all and (max-width: 255px) {
-  /* line 512, ../sass/filters.scss */
+  /* line 515, ../sass/filters.scss */
   .filter-box_price {
     padding-top: 0;
     width: 100%;
   }
 }
-/* line 529, ../sass/filters.scss */
+/* line 532, ../sass/filters.scss */
 .filter-box__content_option-line {
   margin-top: -5px;
 }
-/* line 532, ../sass/filters.scss */
+/* line 535, ../sass/filters.scss */
 .filter-box_actions {
   float: right;
   width: 120px;
   text-align: center;
 }
 @media all and (max-width: 255px) {
-  /* line 532, ../sass/filters.scss */
+  /* line 535, ../sass/filters.scss */
   .filter-box_actions {
     width: 100%;
     *zoom: 1;
@@ -930,20 +934,20 @@ html, body {
   }
 }
 @media all and (max-width: 540px) {
-  /* line 542, ../sass/filters.scss */
+  /* line 545, ../sass/filters.scss */
   .filter-box_used {
     margin-bottom: -16px;
   }
 }
 @media all and (max-width: 255px) {
-  /* line 547, ../sass/filters.scss */
+  /* line 550, ../sass/filters.scss */
   .filter-box_used {
     margin-bottom: 0;
     padding-top: 0;
     width: 100%;
   }
 }
-/* line 556, ../sass/filters.scss */
+/* line 559, ../sass/filters.scss */
 .filter-box__content_used {
   *zoom: 1;
   margin-top: -5px;
@@ -955,50 +959,50 @@ html, body {
   clear: both;
 }
 @media all and (max-width: 540px) {
-  /* line 556, ../sass/filters.scss */
+  /* line 559, ../sass/filters.scss */
   .filter-box__content_used {
     margin-top: 0;
     margin-bottom: 3px;
   }
 }
-/* line 565, ../sass/filters.scss */
+/* line 568, ../sass/filters.scss */
 .filter-box__content_checkbox {
   margin-top: -6px;
 }
-/* line 569, ../sass/filters.scss */
+/* line 572, ../sass/filters.scss */
 .filter-box_power {
   width: 210px;
 }
 @media all and (max-width: 825px) {
-  /* line 569, ../sass/filters.scss */
+  /* line 572, ../sass/filters.scss */
   .filter-box_power {
     width: 195px;
   }
 }
-/* line 575, ../sass/filters.scss */
+/* line 578, ../sass/filters.scss */
 .filter-box_motor {
   width: 110px;
 }
 @media all and (max-width: 825px) {
-  /* line 575, ../sass/filters.scss */
+  /* line 578, ../sass/filters.scss */
   .filter-box_motor {
     width: 100px;
   }
 }
 @media all and (max-width: 825px) {
-  /* line 582, ../sass/filters.scss */
+  /* line 585, ../sass/filters.scss */
   .filter-box .jsKorobka {
     display: none;
   }
 }
 @media all and (max-width: 255px) {
-  /* line 586, ../sass/filters.scss */
+  /* line 589, ../sass/filters.scss */
   .filter-box_without-header {
     margin-left: 4%;
   }
 }
 
-/* line 593, ../sass/filters.scss */
+/* line 596, ../sass/filters.scss */
 .handler-price {
   position: absolute;
   top: 20px;
@@ -1035,12 +1039,12 @@ html, body {
   margin-bottom: -1px;
   border-color: transparent transparent #f7f7f7 transparent;
 }
-/* line 612, ../sass/filters.scss */
+/* line 615, ../sass/filters.scss */
 .handler-price:empty {
   display: none;
 }
 
-/* line 617, ../sass/filters.scss */
+/* line 620, ../sass/filters.scss */
 .price-range {
   margin-bottom: 15px;
   *zoom: 1;
@@ -1052,16 +1056,16 @@ html, body {
   clear: both;
 }
 @media all and (max-width: 549px) {
-  /* line 617, ../sass/filters.scss */
+  /* line 620, ../sass/filters.scss */
   .price-range {
     margin-bottom: 0;
   }
-  /* line 622, ../sass/filters.scss */
+  /* line 625, ../sass/filters.scss */
   .price-range + div {
     display: none;
   }
 }
-/* line 627, ../sass/filters.scss */
+/* line 630, ../sass/filters.scss */
 .price-range-input {
   border: 2px solid #ececec;
   padding: 3px;
@@ -1074,18 +1078,18 @@ html, body {
   color: #4e4e4e;
 }
 @media all and (max-width: 825px) {
-  /* line 627, ../sass/filters.scss */
+  /* line 630, ../sass/filters.scss */
   .price-range-input {
     width: 105px;
     margin-left: 7px;
   }
 }
-/* line 642, ../sass/filters.scss */
+/* line 645, ../sass/filters.scss */
 .price-range-input:first-child {
   margin-left: 0;
 }
 @media all and (max-width: 540px) {
-  /* line 627, ../sass/filters.scss */
+  /* line 630, ../sass/filters.scss */
   .price-range-input {
     width: 90px;
     height: 37px;
@@ -1093,14 +1097,14 @@ html, body {
   }
 }
 @media all and (max-width: 255px) {
-  /* line 627, ../sass/filters.scss */
+  /* line 630, ../sass/filters.scss */
   .price-range-input {
     margin-left: 4%;
     width: 48%;
   }
 }
 
-/* line 657, ../sass/filters.scss */
+/* line 660, ../sass/filters.scss */
 .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
   background: none repeat scroll 0 0 #ececec;
   border: medium none;
@@ -1108,7 +1112,7 @@ html, body {
   height: 2px;
 }
 
-/* line 664, ../sass/filters.scss */
+/* line 667, ../sass/filters.scss */
 .ui-state-default.ui-state-default, .ui-widget-content.ui-widget-content .ui-state-default.ui-state-default, .ui-widget-header.ui-widget-header .ui-state-default {
   background: none repeat scroll 0 0 #fe4d4d;
   border: medium none;
@@ -1119,17 +1123,17 @@ html, body {
   margin-left: -5px;
 }
 
-/* line 674, ../sass/filters.scss */
+/* line 677, ../sass/filters.scss */
 .ui-slider .ui-slider-range {
   background: #c5c5c5;
 }
 
-/* line 678, ../sass/filters.scss */
+/* line 681, ../sass/filters.scss */
 .filter-reset, .advanced-filter-call, .form-submit {
   margin-bottom: 10px;
 }
 
-/* line 682, ../sass/filters.scss */
+/* line 685, ../sass/filters.scss */
 .advanced-filter-call {
   display: block;
   width: 120px;
@@ -1145,19 +1149,19 @@ html, body {
   font-size: 14px;
   padding: 6px 0;
 }
-/* line 696, ../sass/filters.scss */
+/* line 699, ../sass/filters.scss */
 .advanced-filter-call:hover {
   background: #f3f3f3;
   color: #777777;
 }
-/* line 700, ../sass/filters.scss */
+/* line 703, ../sass/filters.scss */
 .advanced-filter-call.is-active {
   border-color: #c9c9c9;
   color: #777;
   background: #fff;
 }
 @media all and (max-width: 255px) {
-  /* line 682, ../sass/filters.scss */
+  /* line 685, ../sass/filters.scss */
   .advanced-filter-call {
     float: left;
     position: relative;
@@ -1167,7 +1171,7 @@ html, body {
   }
 }
 
-/* line 715, ../sass/filters.scss */
+/* line 718, ../sass/filters.scss */
 .filter-reset {
   background: none;
   border: none;
@@ -1177,12 +1181,12 @@ html, body {
   text-shadow: 1px 0 1px #F5F5F5;
   font-size: 14px;
 }
-/* line 723, ../sass/filters.scss */
+/* line 726, ../sass/filters.scss */
 .filter-reset:hover {
   text-decoration: none;
 }
 
-/* line 728, ../sass/filters.scss */
+/* line 731, ../sass/filters.scss */
 .form-submit {
   padding: 6px 0;
   color: #fff;
@@ -1196,26 +1200,26 @@ html, body {
   width: 120px;
   cursor: pointer;
 }
-/* line 740, ../sass/filters.scss */
+/* line 743, ../sass/filters.scss */
 .form-submit:hover {
   background: #ed6b6b;
   border-color: #ed6b6b;
   border-bottom-color: #df6667;
 }
-/* line 745, ../sass/filters.scss */
+/* line 748, ../sass/filters.scss */
 .form-submit.is-active {
   border-color: #ed6b6b;
   color: #ed6b6b;
   background: #fff;
 }
 @media all and (max-width: 255px) {
-  /* line 728, ../sass/filters.scss */
+  /* line 731, ../sass/filters.scss */
   .form-submit {
     width: 48%;
   }
 }
 
-/* line 756, ../sass/filters.scss */
+/* line 759, ../sass/filters.scss */
 .filters-block {
   *zoom: 1;
 }
@@ -1226,18 +1230,18 @@ html, body {
   clear: both;
 }
 @media all and (max-width: 255px) {
-  /* line 758, ../sass/filters.scss */
+  /* line 761, ../sass/filters.scss */
   .filters-block_base {
     border-bottom: none;
   }
 }
-/* line 764, ../sass/filters.scss */
+/* line 767, ../sass/filters.scss */
 .filters-block_advanced {
   border-top: 1px solid #ececec;
   display: none;
 }
 @media all and (max-width: 255px) {
-  /* line 764, ../sass/filters.scss */
+  /* line 767, ../sass/filters.scss */
   .filters-block_advanced {
     padding-top: 15px;
     margin-top: 15px;
@@ -1245,7 +1249,7 @@ html, body {
 }
 
 /* the custom select styles */
-/* line 776, ../sass/filters.scss */
+/* line 779, ../sass/filters.scss */
 .filter-box__inner {
   *zoom: 1;
   margin-bottom: 7px;
@@ -1257,33 +1261,33 @@ html, body {
   clear: both;
 }
 
-/* line 781, ../sass/filters.scss */
+/* line 784, ../sass/filters.scss */
 .dropdown-filter {
   width: 94px;
   float: left;
 }
-/* line 784, ../sass/filters.scss */
+/* line 787, ../sass/filters.scss */
 .dropdown-filter:first-child {
   margin-right: 10px;
 }
 @media all and (max-width: 825px) {
-  /* line 781, ../sass/filters.scss */
+  /* line 784, ../sass/filters.scss */
   .dropdown-filter {
     width: 90px;
   }
 }
 @media all and (max-width: 255px) {
-  /* line 781, ../sass/filters.scss */
+  /* line 784, ../sass/filters.scss */
   .dropdown-filter {
     width: 48%;
   }
-  /* line 792, ../sass/filters.scss */
+  /* line 795, ../sass/filters.scss */
   .dropdown-filter:first-child {
     margin-right: 4%;
   }
 }
 
-/* line 798, ../sass/filters.scss */
+/* line 801, ../sass/filters.scss */
 .myselect {
   border: 1px solid #ededed;
   cursor: pointer;
@@ -1296,7 +1300,7 @@ html, body {
   line-height: 28px;
 }
 
-/* line 810, ../sass/filters.scss */
+/* line 813, ../sass/filters.scss */
 .myfiltrvalue {
   position: absolute;
   top: 50px;
@@ -1316,7 +1320,7 @@ html, body {
   box-shadow: 0 1px 3px -6px #dddddd;
 }
 
-/* line 829, ../sass/filters.scss */
+/* line 832, ../sass/filters.scss */
 .myfiltrvalue:before, .myfiltrvalue:after {
   content: '';
   position: absolute;
@@ -1330,21 +1334,21 @@ html, body {
   margin-left: -10px;
 }
 
-/* line 842, ../sass/filters.scss */
+/* line 845, ../sass/filters.scss */
 .myfiltrvalue:after {
   z-index: 2;
   border-color: transparent transparent #F7F7F7 transparent;
   top: -20px;
 }
 
-/* line 848, ../sass/filters.scss */
+/* line 851, ../sass/filters.scss */
 .myfiltrvalue__item {
   display: block;
   padding: 2px;
   color: #777777;
 }
 
-/* line 854, ../sass/filters.scss */
+/* line 857, ../sass/filters.scss */
 .myselect__current {
   display: block;
   width: 100%;
@@ -1355,7 +1359,7 @@ html, body {
   padding: 2px 4px;
 }
 
-/* line 864, ../sass/filters.scss */
+/* line 867, ../sass/filters.scss */
 .myselect__current:before {
   position: absolute;
   content: '';
@@ -1366,7 +1370,7 @@ html, body {
   right: 8px;
 }
 
-/* line 879, ../sass/filters.scss */
+/* line 882, ../sass/filters.scss */
 .myselect__current:after {
   position: absolute;
   content: '';
@@ -1377,7 +1381,7 @@ html, body {
   right: 8px;
 }
 
-/* line 889, ../sass/filters.scss */
+/* line 892, ../sass/filters.scss */
 .myfiltrvalue__item:hover {
   background: none repeat scroll 0 0 #e7e7e7;
   color: #ffffff;
